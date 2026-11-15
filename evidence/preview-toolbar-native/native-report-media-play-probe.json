@@ -1,0 +1,3082 @@
+{
+  "hashes": {
+    "mask_timeline.py": "1b04663002ee3703a1e5f3f8b2c2e9332e8678aedcac828cb8598d82adeabd38",
+    "index.html": "32cd82414507f7849031799e67fa06bc494930403d727c089f9a0a04d2ee8290",
+    "mask_layers.py": "6b4b41c56637430b47c9a20f27fea4fd401e146be8643ae038f78bb42f3d3476",
+    "sam_service.py": "2dc72accc22f537c23cc04f7334b65814f5a091569919cdd1cdbce89c5588465",
+    "layers_ui.js": "c6d21dada466498e5c4d25e13dbe39e89f64eabc3dc15a3cb8d881a5d1c86287",
+    "workspace_ui.css": "bdcdd2f94b943347bac4186dcd2510e8f0fd44bd920ad4bb563e9b07faf6085a",
+    "preview_video.py": "f6f1a958e0a4372b9551ced8fc2e011990ab32e5eab92ea978d4db6082a4d5ad",
+    "server.py": "53fc8ebb1f925137ab8f75c9652e3802ef8e8ec1689c2edf4926e2486e3e33c0",
+    "sam_engine.py": "7bfdc34a141d0e9df889e089717f1768966ef555d162e5e3796a86e4833e00f9",
+    "workspace_ui.js": "02a54392cdc2bd14e5943fefc0748af13e8a6f356a32ecc48eabbd9bc04efdc2"
+  },
+  "suite_sha256": "b93952a799ac15d4c5b7a92e31be299e58c899587d13a82a9b41a9834cc7eb86",
+  "harness_sha256": "0569e2cb6a24b56865844e9ab938ebd76f2087a43580e2cedd2d9620052ef92c",
+  "input_method": "Real WebView2 with synthetic DOM click/input events; immutable controlled analysis fixtures; no inference",
+  "passed": true,
+  "service": {
+    "pid": 33888,
+    "url": "http://127.0.0.1:64882/"
+  },
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+  "diagnostic_only": true,
+  "probe_sha256": "c717d1a98fbe5f415306a0f64460b1e350a713ce1a6fa0499d7ece82e8e3f247",
+  "dom": {
+    "state": "done",
+    "checks": [
+      {
+        "name": "header actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(51, 70, 86)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": "header intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 52)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(51, 70, 86)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".import-button actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 2,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".import-button intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 2,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 2,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": "#viewer actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          "b": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(141, 204, 255, 0.25)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(174, 220, 255) 0px 0px 0px 1px inset, rgba(141, 204, 255, 0.25) 0px 0px 30px 5px inset"
+          }
+        }
+      },
+      {
+        "name": "#viewer intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          "mid": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(161, 232, 124, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 131) 0px 0px 0px 1px inset, rgba(161, 232, 124, 0.208) 0px 0px 30px 5px inset"
+          },
+          "b": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(141, 204, 255, 0.25)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(174, 220, 255) 0px 0px 0px 1px inset, rgba(141, 204, 255, 0.25) 0px 0px 30px 5px inset"
+          }
+        }
+      },
+      {
+        "name": ".timeline-clip.active actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 4,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 6,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".timeline-clip.active intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 4,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 6,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 6,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".layer-item.active actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 5,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 7,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".layer-item.active intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 5,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 7,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 7,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": "layer is rebuilt during mode toggle",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel initial label",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel collapsed semantics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel restore reachable",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel restored",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel initial label",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel collapsed semantics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel restore reachable",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel restored",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel initial label",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel collapsed semantics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel restore reachable",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel restored",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "single visible toolbar",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared split edits effect only",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared undo effect split",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared delete removes effect",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared undo effect delete",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared split edits video",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared delete merges video",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared undo video merge",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "raw slider synchronizes global start",
+        "passed": true,
+        "details": {
+          "globalFrame": 0,
+          "slider": "0",
+          "sourceTime": 0
+        }
+      },
+      {
+        "name": "continuous selection cleared",
+        "passed": true,
+        "details": null
+      }
+    ],
+    "observations": [
+      {
+        "diagnostic": "descriptor installed",
+        "media": {
+          "at": 623.5,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 2,
+          "time": 0,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 0.01,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at http://127.0.0.1:64882/:178:84\n    at new Promise (<anonymous>)\n    at seekDecodedFrame (http://127.0.0.1:64882/:169:55)\n    at seekSamRaw (http://127.0.0.1:64882/:381:548)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:542)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/:377:606)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/:372:154)\n    at Object.click (eval at <anonymous> (:4:29), <anonymous>:7:126)\n    at window.runSuite (eval at <anonymous> (:4:29), <anonymous>:21:17)",
+        "media": {
+          "at": 1361.2000000029802,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 3,
+          "time": 0,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 1379.2999999970198,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 3,
+          "time": 0.01,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 1386.2999999970198,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 3,
+          "time": 0.01,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeked",
+        "media": {
+          "at": 1392.0999999940395,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 3,
+          "time": 0.01,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "canplay",
+        "media": {
+          "at": 1395.7000000029802,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 3,
+          "time": 0.01,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "case": "actual toggle rebuilt nodes",
+        "a": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 4,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 5,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        },
+        "immediate": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 6,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 7,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        },
+        "mid": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 52)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(161, 232, 124, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 131) 0px 0px 0px 1px inset, rgba(161, 232, 124, 0.208) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 6,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 7,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        },
+        "b": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(51, 70, 86)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(141, 204, 255, 0.25)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(174, 220, 255) 0px 0px 0px 1px inset, rgba(141, 204, 255, 0.25) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 6,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 7,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 0,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:924)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/:377:606)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/:372:154)\n    at Object.click (eval at <anonymous> (:4:29), <anonymous>:7:126)\n    at window.runSuite (eval at <anonymous> (:4:29), <anonymous>:23:106)\n    at async runSuite (eval at <anonymous> (:4:29), <anonymous>:9:24)",
+        "media": {
+          "at": 2135,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 4,
+          "time": 0.01,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 2143,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 4,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 2164.2999999970198,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 4,
+          "time": 0,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeked",
+        "media": {
+          "at": 2164.5,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 4,
+          "time": 0,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "canplay",
+        "media": {
+          "at": 2164.7000000029802,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 4,
+          "time": 0,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": ""
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 0.01,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at http://127.0.0.1:64882/:178:84\n    at new Promise (<anonymous>)\n    at seekDecodedFrame (http://127.0.0.1:64882/:169:55)\n    at loadCachedPreview (http://127.0.0.1:64882/:181:531)\n    at loadCachedPreview (http://127.0.0.1:64882/layers_ui.js:51:151)\n    at schedulePreview (http://127.0.0.1:64882/:190:500)\n    at schedulePreview (http://127.0.0.1:64882/:256:189)\n    at schedulePreview (http://127.0.0.1:64882/:406:216)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:1062)",
+        "media": {
+          "at": 4384.20000000298,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 0,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 4388.79999999702,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 0.01,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 4389,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 0.01,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeked",
+        "media": {
+          "at": 4389.0999999940395,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 0.01,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "canplay",
+        "media": {
+          "at": 4399.899999991059,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 0.01,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 2.41,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at http://127.0.0.1:64882/:178:84\n    at new Promise (<anonymous>)\n    at seekDecodedFrame (http://127.0.0.1:64882/:169:55)\n    at drainScrubPreview (http://127.0.0.1:64882/:267:404)\n    at drainScrubPreview (http://127.0.0.1:64882/layers_ui.js:52:148)\n    at queueScrubPreview (http://127.0.0.1:64882/:266:323)\n    at queueScrubPreview (http://127.0.0.1:64882/layers_ui.js:79:486)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:64882/:204:233)\n    at Object.frame (eval at <anonymous> (:4:29), <anonymous>:8:76)",
+        "media": {
+          "at": 5079,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 0.01,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 2.41,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at http://127.0.0.1:64882/:178:84\n    at new Promise (<anonymous>)\n    at seekDecodedFrame (http://127.0.0.1:64882/:169:55)\n    at loadCachedPreview (http://127.0.0.1:64882/:181:531)\n    at loadCachedPreview (http://127.0.0.1:64882/layers_ui.js:51:151)\n    at schedulePreview (http://127.0.0.1:64882/:190:500)\n    at schedulePreview (http://127.0.0.1:64882/:256:189)\n    at schedulePreview (http://127.0.0.1:64882/:406:216)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:1062)",
+        "media": {
+          "at": 5081.29999999702,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 2.41,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 5084.5999999940395,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 2.41,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 5084.70000000298,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 2.41,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 5104.70000000298,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 2.41,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeked",
+        "media": {
+          "at": 5104.79999999702,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 2.41,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "canplay",
+        "media": {
+          "at": 5104.79999999702,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 5,
+          "time": 2.41,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 2.4,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:924)\n    at commitMaskRegions (http://127.0.0.1:64882/:87:503)\n    at deleteMaskRegion (http://127.0.0.1:64882/:90:83)\n    at deleteTimelineSelection (http://127.0.0.1:64882/:432:111)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/:279:46)\n    at Object.click (eval at <anonymous> (:4:29), <anonymous>:7:126)\n    at window.runSuite (eval at <anonymous> (:4:29), <anonymous>:26:448)\n    at async runSuite (eval at <anonymous> (:4:29), <anonymous>:9:24)",
+        "media": {
+          "at": 5784.79999999702,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 11,
+          "time": 2.41,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 5789.5,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 11,
+          "time": 2.4,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 5810.70000000298,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 11,
+          "time": 2.4,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeked",
+        "media": {
+          "at": 5810.79999999702,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 11,
+          "time": 2.4,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "canplay",
+        "media": {
+          "at": 5810.899999991059,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 11,
+          "time": 2.4,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 2.41,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at http://127.0.0.1:64882/:178:84\n    at new Promise (<anonymous>)\n    at seekDecodedFrame (http://127.0.0.1:64882/:169:55)\n    at loadCachedPreview (http://127.0.0.1:64882/:181:531)\n    at loadCachedPreview (http://127.0.0.1:64882/layers_ui.js:51:151)\n    at schedulePreview (http://127.0.0.1:64882/:190:500)\n    at schedulePreview (http://127.0.0.1:64882/:256:189)\n    at schedulePreview (http://127.0.0.1:64882/:406:216)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:1062)",
+        "media": {
+          "at": 5997,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 13,
+          "time": 2.4,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 6009.20000000298,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 13,
+          "time": 2.41,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 6024.399999991059,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 13,
+          "time": 2.41,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeked",
+        "media": {
+          "at": 6024.5,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 13,
+          "time": 2.41,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "canplay",
+        "media": {
+          "at": 6032.79999999702,
+          "globalFrame": 60,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 13,
+          "time": 2.41,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 5.61,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at http://127.0.0.1:64882/:178:84\n    at new Promise (<anonymous>)\n    at seekDecodedFrame (http://127.0.0.1:64882/:169:55)\n    at drainScrubPreview (http://127.0.0.1:64882/:267:404)\n    at drainScrubPreview (http://127.0.0.1:64882/layers_ui.js:52:148)\n    at queueScrubPreview (http://127.0.0.1:64882/:266:323)\n    at queueScrubPreview (http://127.0.0.1:64882/layers_ui.js:79:486)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:64882/:204:233)\n    at Object.frame (eval at <anonymous> (:4:29), <anonymous>:8:76)",
+        "media": {
+          "at": 6232.5,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 14,
+          "time": 2.41,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 5.61,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at http://127.0.0.1:64882/:178:84\n    at new Promise (<anonymous>)\n    at seekDecodedFrame (http://127.0.0.1:64882/:169:55)\n    at loadCachedPreview (http://127.0.0.1:64882/:181:531)\n    at async loadCachedPreview (http://127.0.0.1:64882/layers_ui.js:51:145)",
+        "media": {
+          "at": 6235.29999999702,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 14,
+          "time": 5.61,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 6239.5,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 14,
+          "time": 5.61,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 6239.70000000298,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 14,
+          "time": 5.61,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 6286.79999999702,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 14,
+          "time": 5.61,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeked",
+        "media": {
+          "at": 6286.899999991059,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 14,
+          "time": 5.61,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "canplay",
+        "media": {
+          "at": 6291.79999999702,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 14,
+          "time": 5.61,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 5.6,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:924)\n    at selectSegment (http://127.0.0.1:64882/:222:1713)\n    at selectSegment (http://127.0.0.1:64882/:253:206)\n    at splitVideoSelection (http://127.0.0.1:64882/layers_ui.js:72:540)\n    at splitTimelineSelection (http://127.0.0.1:64882/:431:132)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/layers_ui.js:73:74)\n    at Object.click (eval at <anonymous> (:4:29), <anonymous>:7:126)\n    at window.runSuite (eval at <anonymous> (:4:29), <anonymous>:27:125)\n    at async runSuite (eval at <anonymous> (:4:29), <anonymous>:9:24)",
+        "media": {
+          "at": 6501.899999991059,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 15,
+          "time": 5.61,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 6511.29999999702,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 15,
+          "time": 5.6,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 6563.0999999940395,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 15,
+          "time": 5.6,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeked",
+        "media": {
+          "at": 6563.399999991059,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 15,
+          "time": 5.6,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "canplay",
+        "media": {
+          "at": 6563.399999991059,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 15,
+          "time": 5.6,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 0,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:924)\n    at selectSegment (http://127.0.0.1:64882/:222:1713)\n    at selectSegment (http://127.0.0.1:64882/:253:206)\n    at deleteSelectedCut (http://127.0.0.1:64882/layers_ui.js:77:881)\n    at deleteTimelineSelection (http://127.0.0.1:64882/:432:149)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/:279:46)\n    at Object.click (eval at <anonymous> (:4:29), <anonymous>:7:126)\n    at window.runSuite (eval at <anonymous> (:4:29), <anonymous>:27:236)\n    at async runSuite (eval at <anonymous> (:4:29), <anonymous>:9:24)",
+        "media": {
+          "at": 6714.70000000298,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 16,
+          "time": 5.6,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 5.6,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:924)\n    at selectSegment (http://127.0.0.1:64882/:253:329)\n    at deleteSelectedCut (http://127.0.0.1:64882/layers_ui.js:77:881)\n    at deleteTimelineSelection (http://127.0.0.1:64882/:432:149)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/:279:46)\n    at Object.click (eval at <anonymous> (:4:29), <anonymous>:7:126)\n    at window.runSuite (eval at <anonymous> (:4:29), <anonymous>:27:236)\n    at async runSuite (eval at <anonymous> (:4:29), <anonymous>:9:24)",
+        "media": {
+          "at": 6715.5999999940395,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 16,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 6721.0999999940395,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 16,
+          "time": 5.6,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 6721.20000000298,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 16,
+          "time": 5.6,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 6771.20000000298,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 16,
+          "time": 5.6,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeked",
+        "media": {
+          "at": 6771.29999999702,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 16,
+          "time": 5.6,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "canplay",
+        "media": {
+          "at": 6771.29999999702,
+          "globalFrame": 140,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 16,
+          "time": 5.6,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 0,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:924)\n    at selectSegment (http://127.0.0.1:64882/:222:1713)\n    at selectSegment (http://127.0.0.1:64882/:253:206)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/:249:1870)\n    at Object.click (eval at <anonymous> (:4:29), <anonymous>:7:126)\n    at window.runSuite (eval at <anonymous> (:4:29), <anonymous>:28:1)\n    at async runSuite (eval at <anonymous> (:4:29), <anonymous>:9:24)",
+        "media": {
+          "at": 7139.0999999940395,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 19,
+          "time": 5.6,
+          "seeking": false,
+          "paused": true,
+          "readyState": 4,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 5.56,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:924)\n    at selectSegment (http://127.0.0.1:64882/:253:329)\n    at HTMLButtonElement.<anonymous> (http://127.0.0.1:64882/:249:1870)\n    at Object.click (eval at <anonymous> (:4:29), <anonymous>:7:126)\n    at window.runSuite (eval at <anonymous> (:4:29), <anonymous>:28:1)\n    at async runSuite (eval at <anonymous> (:4:29), <anonymous>:9:24)",
+        "media": {
+          "at": 7140.20000000298,
+          "globalFrame": 139,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 19,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "currentTime assignment",
+        "value": 0,
+        "stack": "Error\n    at HTMLVideoElement.set [as currentTime] (eval at <anonymous> (:4:29), <anonymous>:7:229)\n    at schedulePreview (http://127.0.0.1:64882/layers_ui.js:48:924)\n    at queueScrubPreview (http://127.0.0.1:64882/layers_ui.js:79:132)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:64882/:204:233)\n    at Object.frame (eval at <anonymous> (:4:29), <anonymous>:8:76)\n    at window.runSuite (eval at <anonymous> (:4:29), <anonymous>:28:33)\n    at async runSuite (eval at <anonymous> (:4:29), <anonymous>:9:24)",
+        "media": {
+          "at": 7142.5999999940395,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 19,
+          "time": 5.56,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 7147.70000000298,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 19,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 7147.79999999702,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 19,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "seeking",
+        "media": {
+          "at": 7147.79999999702,
+          "globalFrame": 0,
+          "clipSelected": true,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 19,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "before continuous click",
+        "label": "all pending across segments",
+        "media": {
+          "at": 7402.899999991059,
+          "globalFrame": 0,
+          "clipSelected": false,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 20,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": false,
+          "style": null,
+          "display": "block",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "before diagnostic play",
+        "media": {
+          "at": 9918,
+          "globalFrame": 0,
+          "clipSelected": false,
+          "playing": false,
+          "startingPlayback": true,
+          "continuousMode": true,
+          "token": 21,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "play",
+        "media": {
+          "at": 9918.59999999404,
+          "globalFrame": 0,
+          "clipSelected": false,
+          "playing": false,
+          "startingPlayback": true,
+          "continuousMode": true,
+          "token": 21,
+          "time": 0,
+          "seeking": true,
+          "paused": false,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "waiting",
+        "media": {
+          "at": 9918.79999999702,
+          "globalFrame": 0,
+          "clipSelected": false,
+          "playing": false,
+          "startingPlayback": true,
+          "continuousMode": true,
+          "token": 21,
+          "time": 0,
+          "seeking": true,
+          "paused": false,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "after diagnostic play",
+        "outcome": "pending",
+        "media": {
+          "at": 12418.5,
+          "globalFrame": 0,
+          "clipSelected": false,
+          "playing": false,
+          "startingPlayback": true,
+          "continuousMode": true,
+          "token": 21,
+          "time": 0,
+          "seeking": true,
+          "paused": false,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "正在定位 · 保留上一帧"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "timeupdate",
+        "media": {
+          "at": 12423.39999999106,
+          "globalFrame": 0,
+          "clipSelected": false,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 22,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "已取消准备；点击播放可重试。"
+        }
+      },
+      {
+        "diagnostic": "event",
+        "event": "pause",
+        "media": {
+          "at": 12423.59999999404,
+          "globalFrame": 0,
+          "clipSelected": false,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 22,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "已取消准备；点击播放可重试。"
+        }
+      },
+      {
+        "diagnostic": "diagnostic play rejected",
+        "error": "AbortError: The play() request was interrupted by a call to pause().",
+        "media": {
+          "at": 12423.79999999702,
+          "globalFrame": 0,
+          "clipSelected": false,
+          "playing": false,
+          "startingPlayback": false,
+          "continuousMode": false,
+          "token": 22,
+          "time": 0,
+          "seeking": true,
+          "paused": true,
+          "readyState": 1,
+          "networkState": 1,
+          "currentSrc": "blob:http://127.0.0.1:64882/eee08aed-9496-4766-b102-a2685415bf55",
+          "error": null,
+          "hidden": true,
+          "style": null,
+          "display": "none",
+          "visibility": "visible",
+          "preload": "metadata",
+          "buffered": [
+            [
+              0,
+              6
+            ]
+          ],
+          "seekable": [
+            [
+              0,
+              6
+            ]
+          ],
+          "feedback": "已取消准备；点击播放可重试。"
+        }
+      }
+    ],
+    "diagnosticOnly": true
+  },
+  "browser_errors": [],
+  "reduced_motion": {
+    "matches": true,
+    "icon": "0s",
+    "viewer": "0s",
+    "ring": "0s"
+  },
+  "source_hashes_after": {
+    "mask_timeline.py": "1b04663002ee3703a1e5f3f8b2c2e9332e8678aedcac828cb8598d82adeabd38",
+    "index.html": "32cd82414507f7849031799e67fa06bc494930403d727c089f9a0a04d2ee8290",
+    "mask_layers.py": "6b4b41c56637430b47c9a20f27fea4fd401e146be8643ae038f78bb42f3d3476",
+    "sam_service.py": "2dc72accc22f537c23cc04f7334b65814f5a091569919cdd1cdbce89c5588465",
+    "layers_ui.js": "c6d21dada466498e5c4d25e13dbe39e89f64eabc3dc15a3cb8d881a5d1c86287",
+    "workspace_ui.css": "bdcdd2f94b943347bac4186dcd2510e8f0fd44bd920ad4bb563e9b07faf6085a",
+    "preview_video.py": "f6f1a958e0a4372b9551ced8fc2e011990ab32e5eab92ea978d4db6082a4d5ad",
+    "server.py": "53fc8ebb1f925137ab8f75c9652e3802ef8e8ec1689c2edf4926e2486e3e33c0",
+    "sam_engine.py": "7bfdc34a141d0e9df889e089717f1768966ef555d162e5e3796a86e4833e00f9",
+    "workspace_ui.js": "02a54392cdc2bd14e5943fefc0748af13e8a6f356a32ecc48eabbd9bc04efdc2"
+  }
+}

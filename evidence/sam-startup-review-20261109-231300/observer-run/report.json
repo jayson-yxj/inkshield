@@ -1,0 +1,1545 @@
+{
+  "base": "http://127.0.0.1:50164",
+  "source": "C:\\Users\\36301\\Desktop\\5.mp4",
+  "started_at": 1794237334.84443,
+  "warmup_samples": [
+    {
+      "at": 1794237334.8691845,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237335.0954275,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237335.2996423,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237335.5263884,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237335.7303035,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237335.9340608,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237336.139006,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237336.3429995,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237336.547936,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237336.7525284,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237336.9757237,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237337.1830616,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237337.404265,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237337.6317751,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237337.8377726,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237338.0415976,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237338.2589533,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237338.4638534,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237338.667524,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237338.8852067,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237339.089895,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237339.2944305,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237339.5218258,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237339.7266924,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237339.9317532,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237340.1529813,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237340.3574529,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237340.562411,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237340.7668898,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237340.9935567,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237341.1984951,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237341.403094,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237341.6328025,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237341.8616762,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237342.0657794,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237342.2717376,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237342.4765372,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237342.6809173,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237342.8868616,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237343.0911365,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237343.2954571,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237343.5017476,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237343.7148585,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237343.9198763,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237344.1412435,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237344.3464708,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237344.551282,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237344.779302,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237344.9944696,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237345.224402,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237345.4295685,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237345.6355748,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237345.8415601,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237346.0649018,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237346.294611,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237346.4994953,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237346.7213376,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237346.926915,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237347.1306903,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237347.3357902,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237347.562927,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237347.7691922,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237347.9741623,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237348.1800447,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237348.3854132,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237348.6029508,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237348.808481,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237349.0308053,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237349.2355325,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237349.4404662,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237349.6577947,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237349.8856778,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237350.091144,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237350.3156478,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237350.522062,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237350.7272124,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237350.9332738,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237351.1506548,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237351.3557014,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237351.564291,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237351.7691102,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237351.9911537,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237352.2175593,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237352.422693,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237352.6474354,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237352.852065,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237353.057323,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237353.261471,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237353.4856951,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237353.6911364,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237353.8965187,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237354.1027565,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237354.3080182,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237354.5140667,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237354.7194839,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237354.9490979,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237355.154133,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237355.3793142,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237355.584276,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237355.803912,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237356.008997,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237356.2313025,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237356.4597929,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237356.6665895,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237356.8897207,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237357.1176896,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237357.324157,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237357.5302038,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237357.7352293,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237357.9460564,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237358.171156,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237358.3982422,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237358.6036913,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237358.8081555,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237359.0312173,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237359.2379284,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237359.4568653,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237359.6636958,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237359.870357,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237360.07724,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237360.2819207,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237360.4882007,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237360.7150605,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237360.9210515,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237361.126122,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237361.3400753,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237361.5461168,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237361.7524004,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237361.9579732,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237362.181651,
+      "status": 404,
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    {
+      "at": 1794237364.4034166,
+      "connection_error": "<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+    },
+    {
+      "at": 1794237366.6635668,
+      "connection_error": "<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+    },
+    {
+      "at": 1794237368.9091394,
+      "connection_error": "<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+    },
+    {
+      "at": 1794237371.1372414,
+      "connection_error": "<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+    },
+    {
+      "at": 1794237373.379403,
+      "connection_error": "<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+    },
+    {
+      "at": 1794237375.102539,
+      "status": 200,
+      "response": {
+        "state": "pending",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237375.329136,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237375.5589614,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237375.786471,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237375.9935179,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237376.217733,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237376.4461532,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237376.6559062,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237376.8755658,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237377.0819647,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237377.2902837,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237377.516461,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237377.7497187,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237377.955091,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237378.1642196,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237378.3728232,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237378.590038,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237378.8030381,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237379.0809386,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237379.3080463,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": null,
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237379.5348032,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237379.74457,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237379.9688394,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237380.1922872,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237380.4187,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237380.6484008,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237380.877983,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237381.1087844,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237381.319059,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237381.5286381,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237381.8094802,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237382.0176249,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237382.2409558,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237382.4490263,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237382.6579726,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237382.8676324,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237383.076718,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237383.286377,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237383.4980016,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237383.811105,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237384.0299318,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237384.236451,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237384.4583132,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237384.6869626,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237384.9156954,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237385.147969,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237385.3775396,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237385.591668,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237385.8015199,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237386.033731,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237386.242361,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237386.4502478,
+      "status": 200,
+      "response": {
+        "state": "warming",
+        "device": "cuda",
+        "seconds": 0.0,
+        "error": null,
+        "fallback_reason": null
+      }
+    },
+    {
+      "at": 1794237386.6568186,
+      "status": 200,
+      "response": {
+        "state": "ready",
+        "device": "cuda",
+        "seconds": 11.294314499988104,
+        "error": null,
+        "fallback_reason": null
+      }
+    }
+  ],
+  "code_sha256": {
+    "desktop.py": "7810758679c96b922157e30aa5383a2ed2642c5269e78cee48e97592bea9fdf5",
+    "sam_engine.py": "c6e7569e47263e4a0f675e556c7f4497bb05ccdfec6fcc5c79dd42f98bc6549e",
+    "sam_service.py": "e7288b20ab7bdaa0bae4f870b8092a7a49597db2b3e276418e42816e88b49c1b",
+    "index.html": "64702e3f543dd731aafb41924846caebecff048fd375fcd43ef348a852b4aad9"
+  },
+  "warmup-latest": {
+    "status": 200,
+    "wall_seconds": 0.003278599993791431
+  },
+  "observed_warming_to_ready": true,
+  "ready": {
+    "state": "ready",
+    "device": "cuda",
+    "seconds": 11.294314499988104,
+    "error": null,
+    "fallback_reason": null
+  },
+  "capabilities": {
+    "status": 200,
+    "wall_seconds": 0.016844700003275648
+  },
+  "passed": true,
+  "scope": "startup observation only; no upload or real preview",
+  "finished_at": 1794237386.6791267
+}

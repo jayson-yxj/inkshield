@@ -1,0 +1,12 @@
+{
+  "source": "D:\\\u8d22\u5bcc\u5bc6\u7801\\face-mosaic-prototype\\evidence\\effect-track-native-20261110-0054\\verify_mask_timeline_native.py",
+  "source_sha256": "e73002d5c9eaaac22f80fb584a36ef2071c559a1386e32b17765fc1120d73c69",
+  "changes": [
+    "distinct face/custom-a/custom-b fixtures",
+    "frozen integration and adapter gate",
+    "multi ROI artifact oracle hook",
+    "per-asset frame count",
+    "explicit synthetic input disclosure"
+  ],
+  "execution": "not run"
+}

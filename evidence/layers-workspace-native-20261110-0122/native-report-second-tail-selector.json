@@ -1,0 +1,1765 @@
+{
+  "scope": "Real Windows WebView2 DOM events; controlled mask/box cache only; real backend encoding; no GPU inference or packaging",
+  "hashes": {
+    "index.html": "e92afad63ff97f525b2278ba032a49780ad94a9ff54081effb8a7e3a52b2c00f",
+    "layers_ui.js": "c6dec9ed36653299cccf93e19979fac0ac0c107477465f8cb21b0cb5061f907e",
+    "workspace_ui.js": "5ddfd408bebbf93eeb446bb5f6458ce42f05d1c0ac1937318c53bafb0fc024a7",
+    "workspace_ui.css": "d8a8c2a79d05e25c12042de114233fa378e23727e1859221356f5ebbb2b98b7a",
+    "server.py": "53fc8ebb1f925137ab8f75c9652e3802ef8e8ec1689c2edf4926e2486e3e33c0",
+    "preview_video.py": "f6f1a958e0a4372b9551ced8fc2e011990ab32e5eab92ea978d4db6082a4d5ad",
+    "sam_service.py": "2dc72accc22f537c23cc04f7334b65814f5a091569919cdd1cdbce89c5588465",
+    "mask_timeline.py": "1b04663002ee3703a1e5f3f8b2c2e9332e8678aedcac828cb8598d82adeabd38",
+    "mask_layers.py": "6b4b41c56637430b47c9a20f27fea4fd401e146be8643ae038f78bb42f3d3476",
+    "sam_engine.py": "7bfdc34a141d0e9df889e089717f1768966ef555d162e5e3796a86e4833e00f9",
+    "masking.py": "28bd5cfb579419a292d67a105b18fd732f7590e561e2b64a38b785c71f0b053f"
+  },
+  "suite_sha256": "5c62fbf56e94641c819ea21cf9122156d6f4d8f1469d21729f206bc6ea3b0920",
+  "integration": {
+    "state": "frozen",
+    "source_files": [
+      "index.html",
+      "layers_ui.js",
+      "workspace_ui.js",
+      "workspace_ui.css"
+    ],
+    "acceptance_hashes": {
+      "dom_suite.js": "5c62fbf56e94641c819ea21cf9122156d6f4d8f1469d21729f206bc6ea3b0920",
+      "frozen_adapter.js": "d5751b89b47ba929caeafd886cf688c18fe26b5aea2cc070ba6a98c4c425023b",
+      "workspace_probe.js": "21fc14d77b24b42bc263c3d006d7bdc2373b3f708066a4f871954bf5cc95cd56",
+      "workspace_cases.js": "220bb3476fb349bf041e7ddea64e5567ac393b6bee1b8cd0266db634f78f65ef",
+      "sam_cases.js": "5be73f6229fcea3441da5f9164c9994f7e472fc047d179e9923134e356e562f8",
+      "tail_cases.js": "077f5bf31ae85585faaeacdd3809f66377dd9b04984990a45805718adf01d9cd",
+      "pixel_capture.js": "a3dffebc3ed11237988e9e9d2066d9e17d4b90110157b7f7abf0b80495a4bd74",
+      "reference_builder.py": "247fe2f5a264f6cc3ebb4ee07a1731254bf316a4d4240397a660a73f0d1cdb78",
+      "pixel_oracle.py": "40ef5b09c0b26a87efaf5131db22f96645bcf69d85eaf13bd3b61201d0c9d4f1",
+      "controlled_fixtures.py": "0789b88f486766358116fb3ca2923e61570f01010a56e3c28826b609e11481e4",
+      "verify_mask_timeline_native.py": "becbb72723a33ddc74e39dff2030da0a9638d19d06e6f9b01dcdb5fa9531c0ea"
+    },
+    "backend_sam_over_five_evidence": {
+      "path": "BACKEND_LAYERS_REVIEW.md",
+      "sha256": "b5348eceb1c23e60fcac1b3e53110c88825c2c37f107472c70a03defa8e529f5",
+      "test": "tests/test_sam_integration.py",
+      "test_sha256": "09642c17ec600fdc5b49bd55e4ccfe0507bafa01169f7b7fdcea1b4c76c50ddd",
+      "note": "Parent reported 51 tests/12.624 sec including seven analyses; this run uses controlled masks, not inference."
+    },
+    "selectors": {
+      "transform": "#previewTransform",
+      "zoom_reset": "#previewZoomReset",
+      "toggle_left": "#toggleMediaPanel",
+      "toggle_right": "#toggleInspectorPanel",
+      "toggle_bottom": "#toggleTimelinePanel",
+      "layer_create": "#layerPanel button (exact text + 自动层 / + 自定义层)",
+      "layer_select": "#layerPanel button[aria-pressed]",
+      "layer_active_clear": "#deleteMaskRegion",
+      "layer_region": ".timeline-mask[data-layer-id] within .layer-mask-row",
+      "layer_region_start": ".mask-handle.start",
+      "layer_region_end": ".mask-handle.end"
+    },
+    "layout_settled_event": "workspace:layoutsettled",
+    "toggle_state": "aria-expanded",
+    "pan_gesture": "custom: Space+left or middle; noncustom: left",
+    "sam_coordinate_contract": "getBoundingClientRect on transformed displayed media; do not apply inverse twice",
+    "required_artifacts": [
+      "preview JPEG",
+      "protected H264",
+      "export",
+      "browser request log",
+      "ROI and order comparisons",
+      "panel before/during/after geometry",
+      "SAM click source coordinates and frame/layer token"
+    ],
+    "input_method": "synthetic DOM PointerEvent/WheelEvent/KeyboardEvent, not OS mouse automation",
+    "pixel_expectations": {
+      "protected": [],
+      "export": []
+    }
+  },
+  "input_method": "Synthetic DOM PointerEvent/WheelEvent; not OS input",
+  "passed": false,
+  "service": {
+    "pid": 37184,
+    "url": "http://127.0.0.1:57020/"
+  },
+  "dom": {
+    "state": "failed",
+    "checks": [
+      {
+        "name": "new pending custom retains previous automatic layer",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "new custom is active and pending",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "pending custom shows SAM controls",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "one automatic and two custom on same segment",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "three separate effect tracks",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "nonactive automatic trim targets its own layer",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "nonactive trim isolates other layers",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "nonactive trim commits exactly one undo",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "undo restores complete layer stack",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "layer region exists layer-1",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "region click selects actual layer layer-1",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "edited range and parameter 0",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "selection parameter isolation 0",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "layer region exists layer-2",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "region click selects actual layer layer-2",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "edited range and parameter 1",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "selection parameter isolation 1",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "layer region exists layer-3",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "region click selects actual layer layer-3",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "edited range and parameter 2",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "selection parameter isolation 2",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "layer region exists layer-1",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "region click selects actual layer layer-1",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "reselection inspector reflects layer 0",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "layer region exists layer-2",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "region click selects actual layer layer-2",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "reselection inspector reflects layer 1",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "layer region exists layer-3",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "region click selects actual layer layer-3",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "reselection inspector reflects layer 2",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "overlap preserved in ordered full payload",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "layer region exists layer-2",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "region click selects actual layer layer-2",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "delete clears only active layer region",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "explicit empty layer survives selection",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "undo empty layer restores layer stack",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "frozen extension suite available",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "#toggleMediaPanel aria-expanded toggles",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "#toggleMediaPanel aria-expanded toggles",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "panel shrinks .media-panel",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "panel restores expanded size .media-panel",
+        "passed": true,
+        "details": {
+          "before": {
+            "x": 14,
+            "y": 68,
+            "width": 220,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "collapsed": {
+            "before": {
+              "x": 14,
+              "y": 68,
+              "width": 220,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "during": {
+              "x": 14,
+              "y": 68,
+              "width": 144.53750610351562,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "after": {
+              "x": 14,
+              "y": 68,
+              "width": 0,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "expanded": "false"
+          },
+          "expanded": {
+            "before": {
+              "x": 14,
+              "y": 68,
+              "width": 0,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "during": {
+              "x": 14,
+              "y": 68,
+              "width": 75.4375,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "after": {
+              "x": 14,
+              "y": 68,
+              "width": 220,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "expanded": "true"
+          }
+        }
+      },
+      {
+        "name": "#toggleInspectorPanel aria-expanded toggles",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "#toggleInspectorPanel aria-expanded toggles",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "panel shrinks .controls",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "panel restores expanded size .controls",
+        "passed": true,
+        "details": {
+          "before": {
+            "x": 1122.4000244140625,
+            "y": 68,
+            "width": 310,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "collapsed": {
+            "before": {
+              "x": 1122.4000244140625,
+              "y": 68,
+              "width": 310,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "during": {
+              "x": 1209.125,
+              "y": 68,
+              "width": 223.27500915527344,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "after": {
+              "x": 1432.4000244140625,
+              "y": 68,
+              "width": 0,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "expanded": "false"
+          },
+          "expanded": {
+            "before": {
+              "x": 1432.4000244140625,
+              "y": 68,
+              "width": 0,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "during": {
+              "x": 1326.2625732421875,
+              "y": 68,
+              "width": 106.13750457763672,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "after": {
+              "x": 1122.4000244140625,
+              "y": 68,
+              "width": 310,
+              "height": 481.20001220703125,
+              "transform": "none",
+              "hidden": false
+            },
+            "expanded": "true"
+          }
+        }
+      },
+      {
+        "name": "#toggleTimelinePanel aria-expanded toggles",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "#toggleTimelinePanel aria-expanded toggles",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "panel shrinks .timeline",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "panel restores expanded size .timeline",
+        "passed": true,
+        "details": {
+          "before": {
+            "x": 14,
+            "y": 557.2000122070312,
+            "width": 1418.4000244140625,
+            "height": 290,
+            "transform": "none",
+            "hidden": false
+          },
+          "collapsed": {
+            "before": {
+              "x": 14,
+              "y": 557.2000122070312,
+              "width": 1418.4000244140625,
+              "height": 290,
+              "transform": "none",
+              "hidden": false
+            },
+            "during": {
+              "x": 14,
+              "y": 678.5125122070312,
+              "width": 1418.4000244140625,
+              "height": 168.6875,
+              "transform": "none",
+              "hidden": false
+            },
+            "after": {
+              "x": 14,
+              "y": 847.2000122070312,
+              "width": 1418.4000244140625,
+              "height": 0,
+              "transform": "none",
+              "hidden": false
+            },
+            "expanded": "false"
+          },
+          "expanded": {
+            "before": {
+              "x": 14,
+              "y": 847.2000122070312,
+              "width": 1418.4000244140625,
+              "height": 0,
+              "transform": "none",
+              "hidden": false
+            },
+            "during": {
+              "x": 14,
+              "y": 748.625,
+              "width": 1418.4000244140625,
+              "height": 98.57500457763672,
+              "transform": "none",
+              "hidden": false
+            },
+            "after": {
+              "x": 14,
+              "y": 557.2000122070312,
+              "width": 1418.4000244140625,
+              "height": 290,
+              "transform": "none",
+              "hidden": false
+            },
+            "expanded": "true"
+          }
+        }
+      },
+      {
+        "name": "workspace tools do not add SAM prompts",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "wheel scales shared preview",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "pan changes shared transform",
+        "passed": true,
+        "details": {
+          "zoom": {
+            "x": -198.38516235351562,
+            "y": -27.969593048095703,
+            "width": 1753.5758056640625,
+            "height": 696.9598388671875,
+            "transform": "matrix(2.01375, 0, 0, 2.01375, 0.202747, 0.760315)",
+            "hidden": false
+          },
+          "pan": {
+            "x": -169.582275390625,
+            "y": -7.969592571258545,
+            "width": 1753.5758056640625,
+            "height": 696.9598388671875,
+            "transform": "matrix(2.01375, 0, 0, 2.01375, 29.0056, 20.7603)",
+            "hidden": false
+          }
+        }
+      },
+      {
+        "name": "navigation does not add SAM prompts",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "frozen SAM attribution case available",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "SAM custom layer exists",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "SAM click is tested under zoom",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "stale SAM frame rejects click",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "SAM request uses real preview route",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "zoomed SAM payload maps to source pixels",
+        "passed": true,
+        "details": {
+          "expected": {
+            "x": 149,
+            "y": 112
+          },
+          "point": {
+            "x": 149,
+            "y": 112,
+            "label": 1
+          },
+          "rect": {
+            "x": -169.582275390625,
+            "y": -7.969592571258545,
+            "width": 1753.5758056640625,
+            "height": 696.9598388671875
+          }
+        }
+      },
+      {
+        "name": "SAM payload frame and segment attribution",
+        "passed": true,
+        "details": {
+          "url": "http://127.0.0.1:57020/api/sam/preview",
+          "body": {
+            "media_id": "f5811006fcb349e8a9e672c243616035",
+            "start_frame": 0,
+            "end_frame": 150,
+            "frame": 0,
+            "prompts": [
+              {
+                "x": 149,
+                "y": 112,
+                "label": 1
+              }
+            ],
+            "device": "cpu"
+          },
+          "layerId": "layer-2",
+          "segmentId": 1
+        }
+      },
+      {
+        "name": "SAM prompt belongs to selected custom layer",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "SAM leaves other layers unchanged",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "controlled empty mask retains visible points",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "SAM fixture restores complete layer snapshot",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "DOM split for short tail 140",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "tail custom region covers entire local segment 140",
+        "passed": false,
+        "details": null
+      }
+    ],
+    "observations": [
+      {
+        "kind": "DOM PointerEvent drag",
+        "selector": ".timeline-mask[data-layer-id=\"layer-1\"] .mask-handle.start",
+        "from": 0,
+        "to": 20,
+        "events": 14,
+        "before": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "custom",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "custom"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true
+            }
+          }
+        ],
+        "after": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "automatic",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "face"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 20,
+                  "end": 150,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "face"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "kind": "DOM PointerEvent drag",
+        "selector": ".timeline-mask[data-layer-id=\"layer-1\"] .mask-handle.start",
+        "from": 0,
+        "to": 20,
+        "events": 14,
+        "before": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "custom",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "custom"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true
+            }
+          }
+        ],
+        "after": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "automatic",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "face"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 20,
+                  "end": 150,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "face"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "kind": "DOM PointerEvent drag",
+        "selector": ".timeline-mask[data-layer-id=\"layer-1\"] .mask-handle.end",
+        "from": 150,
+        "to": 100,
+        "events": 14,
+        "before": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "automatic",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "face"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 20,
+                  "end": 150,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "face"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ],
+        "after": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "automatic",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "face"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 20,
+                  "end": 100,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "face"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "kind": "DOM PointerEvent drag",
+        "selector": ".timeline-mask[data-layer-id=\"layer-2\"] .mask-handle.start",
+        "from": 0,
+        "to": 40,
+        "events": 14,
+        "before": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "custom",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "custom"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true
+            }
+          }
+        ],
+        "after": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "custom",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "custom"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 40,
+                  "end": 150,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "custom"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "kind": "DOM PointerEvent drag",
+        "selector": ".timeline-mask[data-layer-id=\"layer-2\"] .mask-handle.end",
+        "from": 150,
+        "to": 120,
+        "events": 14,
+        "before": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "custom",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "custom"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 40,
+                  "end": 150,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "custom"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ],
+        "after": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "custom",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "custom"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 40,
+                  "end": 120,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "custom"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "kind": "DOM PointerEvent drag",
+        "selector": ".timeline-mask[data-layer-id=\"layer-3\"] .mask-handle.start",
+        "from": 0,
+        "to": 60,
+        "events": 14,
+        "before": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "automatic",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "face"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 20,
+                  "end": 100,
+                  "style": "black",
+                  "strength": 100,
+                  "targets": [
+                    "face"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ],
+        "after": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "custom",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "custom"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 60,
+                  "end": 150,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "custom"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "kind": "DOM PointerEvent drag",
+        "selector": ".timeline-mask[data-layer-id=\"layer-3\"] .mask-handle.end",
+        "from": 150,
+        "to": 140,
+        "events": 14,
+        "before": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "custom",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "custom"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 60,
+                  "end": 150,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "custom"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ],
+        "after": [
+          {
+            "id": 1,
+            "start": 0,
+            "end": 150,
+            "settings": {
+              "mode": "custom",
+              "samPrompts": {},
+              "samDevice": "cpu",
+              "targets": [
+                "custom"
+              ],
+              "style": "mosaic",
+              "strength": 68,
+              "faceMode": "all",
+              "faceShape": "circumscribed",
+              "personIds": [],
+              "maskPending": true,
+              "maskRegions": [
+                {
+                  "id": "legacy",
+                  "start": 60,
+                  "end": 140,
+                  "style": "mosaic",
+                  "strength": 68,
+                  "targets": [
+                    "custom"
+                  ],
+                  "faceMode": "all",
+                  "faceShape": "circumscribed",
+                  "personIds": [],
+                  "maskPending": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "kind": "panel-animation",
+        "panel": ".media-panel",
+        "before": {
+          "x": 14,
+          "y": 68,
+          "width": 220,
+          "height": 481.20001220703125,
+          "transform": "none",
+          "hidden": false
+        },
+        "collapsed": {
+          "before": {
+            "x": 14,
+            "y": 68,
+            "width": 220,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "during": {
+            "x": 14,
+            "y": 68,
+            "width": 144.53750610351562,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "after": {
+            "x": 14,
+            "y": 68,
+            "width": 0,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "expanded": "false"
+        },
+        "expanded": {
+          "before": {
+            "x": 14,
+            "y": 68,
+            "width": 0,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "during": {
+            "x": 14,
+            "y": 68,
+            "width": 75.4375,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "after": {
+            "x": 14,
+            "y": 68,
+            "width": 220,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "expanded": "true"
+        }
+      },
+      {
+        "kind": "panel-animation",
+        "panel": ".controls",
+        "before": {
+          "x": 1122.4000244140625,
+          "y": 68,
+          "width": 310,
+          "height": 481.20001220703125,
+          "transform": "none",
+          "hidden": false
+        },
+        "collapsed": {
+          "before": {
+            "x": 1122.4000244140625,
+            "y": 68,
+            "width": 310,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "during": {
+            "x": 1209.125,
+            "y": 68,
+            "width": 223.27500915527344,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "after": {
+            "x": 1432.4000244140625,
+            "y": 68,
+            "width": 0,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "expanded": "false"
+        },
+        "expanded": {
+          "before": {
+            "x": 1432.4000244140625,
+            "y": 68,
+            "width": 0,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "during": {
+            "x": 1326.2625732421875,
+            "y": 68,
+            "width": 106.13750457763672,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "after": {
+            "x": 1122.4000244140625,
+            "y": 68,
+            "width": 310,
+            "height": 481.20001220703125,
+            "transform": "none",
+            "hidden": false
+          },
+          "expanded": "true"
+        }
+      },
+      {
+        "kind": "panel-animation",
+        "panel": ".timeline",
+        "before": {
+          "x": 14,
+          "y": 557.2000122070312,
+          "width": 1418.4000244140625,
+          "height": 290,
+          "transform": "none",
+          "hidden": false
+        },
+        "collapsed": {
+          "before": {
+            "x": 14,
+            "y": 557.2000122070312,
+            "width": 1418.4000244140625,
+            "height": 290,
+            "transform": "none",
+            "hidden": false
+          },
+          "during": {
+            "x": 14,
+            "y": 678.5125122070312,
+            "width": 1418.4000244140625,
+            "height": 168.6875,
+            "transform": "none",
+            "hidden": false
+          },
+          "after": {
+            "x": 14,
+            "y": 847.2000122070312,
+            "width": 1418.4000244140625,
+            "height": 0,
+            "transform": "none",
+            "hidden": false
+          },
+          "expanded": "false"
+        },
+        "expanded": {
+          "before": {
+            "x": 14,
+            "y": 847.2000122070312,
+            "width": 1418.4000244140625,
+            "height": 0,
+            "transform": "none",
+            "hidden": false
+          },
+          "during": {
+            "x": 14,
+            "y": 748.625,
+            "width": 1418.4000244140625,
+            "height": 98.57500457763672,
+            "transform": "none",
+            "hidden": false
+          },
+          "after": {
+            "x": 14,
+            "y": 557.2000122070312,
+            "width": 1418.4000244140625,
+            "height": 290,
+            "transform": "none",
+            "hidden": false
+          },
+          "expanded": "true"
+        }
+      },
+      {
+        "kind": "sam-zoom-attribution",
+        "calls": [
+          {
+            "url": "http://127.0.0.1:57020/api/sam/preview",
+            "body": {
+              "media_id": "f5811006fcb349e8a9e672c243616035",
+              "start_frame": 0,
+              "end_frame": 150,
+              "frame": 0,
+              "prompts": [
+                {
+                  "x": 149,
+                  "y": 112,
+                  "label": 1
+                }
+              ],
+              "device": "cpu"
+            },
+            "layerId": "layer-2",
+            "segmentId": 1
+          }
+        ],
+        "expected": {
+          "x": 149,
+          "y": 112
+        },
+        "controlledInference": true
+      }
+    ],
+    "error": "Error: tail custom region covers entire local segment 140 null\n    at Object.check (eval at <anonymous> (:4:29), <anonymous>:7:106)\n    at window.runFrozenTailCases (eval at <anonymous> (:4:29), <anonymous>:12:6)\n    at async window.runMaskTimelineAcceptance (eval at <anonymous> (:4:29), <anonymous>:40:2)"
+  },
+  "error": "Traceback (most recent call last):\n  File \"D:\\财富密码\\face-mosaic-prototype\\evidence\\layers-workspace-native-20261110-0122\\verify_mask_timeline_native.py\", line 173, in run\n    assert report['dom']['state']=='done',report['dom']['error']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Error: tail custom region covers entire local segment 140 null\n    at Object.check (eval at <anonymous> (:4:29), <anonymous>:7:106)\n    at window.runFrozenTailCases (eval at <anonymous> (:4:29), <anonymous>:12:6)\n    at async window.runMaskTimelineAcceptance (eval at <anonymous> (:4:29), <anonymous>:40:2)\n",
+  "failure_sample": {
+    "now": 12227.09999999404,
+    "frame": 139,
+    "slider": 139,
+    "seg": 4,
+    "segStart": 0,
+    "custom": true,
+    "ready": false,
+    "hash": "",
+    "center": null,
+    "sourceHidden": true,
+    "decodedSourceFrame": 0,
+    "samDisplayed": "",
+    "sourceTime": 5.57,
+    "protectedTime": 0
+  },
+  "browser_errors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:57020/api/media",
+      "at": 263,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 428
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/playback/controlled-auto",
+      "at": 796,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 808.7999999970198
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&target=face&style=mosaic&strength=68&face_mode=all&face_shape=circumscribed&person_ids=&mask_pending=true",
+      "at": 803.5,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 843.0999999940395,
+      "bodyEnd": 843.5
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/playback/controlled-custom-a",
+      "at": 1061.0999999940395,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 1077.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/playback/controlled-custom-b",
+      "at": 1232.699999988079,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 1243.7999999970198
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/playback/controlled-custom-b",
+      "at": 1238.0999999940395,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 1244.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 1244.199999988079,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 1292.2999999970198,
+      "bodyEnd": 1292.699999988079
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 1292.7999999970198,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 1325,
+      "bodyEnd": 1325.3999999910593
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 1401.7999999970198,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 1438.0999999940395,
+      "bodyEnd": 1438.5
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 1716.2999999970198,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 1746.5999999940395,
+      "bodyEnd": 1746.8999999910593
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 1979.0999999940395,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 2014.699999988079,
+      "bodyEnd": 2015.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/playback/controlled-custom-a",
+      "at": 2228.5999999940395,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 2234
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 2234.2999999970198,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 2269.3999999910593,
+      "bodyEnd": 2269.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 2269.7999999970198,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 2305.3999999910593,
+      "bodyEnd": 2305.7999999970198
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 2404.2999999970198,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 2443.199999988079,
+      "bodyEnd": 2443.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 2720.5,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 2754.7999999970198,
+      "bodyEnd": 2755.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 3292.3999999910593,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 3335.0999999940395,
+      "bodyEnd": 3335.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 3703.699999988079,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 3745.5999999940395,
+      "bodyEnd": 3746.2999999970198
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 3805.5,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 3849,
+      "bodyEnd": 3849.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 3970.8999999910593,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 4011.0999999940395,
+      "bodyEnd": 4011.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 4288.29999999702,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 4326.699999988079,
+      "bodyEnd": 4327.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 4862,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 4905,
+      "bodyEnd": 4905.5
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/sam/warmup",
+      "at": 5162.899999991059,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 5168.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 5269.79999999702,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 5310,
+      "bodyEnd": 5310.5
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 5369.79999999702,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 5416.899999991059,
+      "bodyEnd": 5417.5
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A0%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 5542.5999999940395,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 5582.5999999940395,
+      "bodyEnd": 5583.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A150%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 5857,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 5894,
+      "bodyEnd": 5894.5
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A68%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 6438.79999999702,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 6476.699999988079,
+      "bodyEnd": 6477.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 6850.199999988079,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 6886.899999991059,
+      "bodyEnd": 6887.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 6956.29999999702,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 6993.899999991059,
+      "bodyEnd": 6994.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 7064.5999999940395,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 7100.199999988079,
+      "bodyEnd": 7100.79999999702
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 7181.699999988079,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 7218.5999999940395,
+      "bodyEnd": 7219.0999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 7294.399999991059,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 7329.79999999702,
+      "bodyEnd": 7330.29999999702
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 7408.699999988079,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 7446.0999999940395,
+      "bodyEnd": 7446.399999991059
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 7596.199999988079,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 7634.899999991059,
+      "bodyEnd": 7635.399999991059
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 7756.29999999702,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 7796.0999999940395,
+      "bodyEnd": 7796.5
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 7916.199999988079,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 7951.899999991059,
+      "bodyEnd": 7952.5999999940395
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/sam/warmup",
+      "at": 10169.39999999106,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 10175.199999988079
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=0&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 10837.89999999106,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 10874.39999999106,
+      "bodyEnd": 10874.89999999106
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=140&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 11064.5,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 11121,
+      "bodyEnd": 11121.29999999702
+    },
+    {
+      "url": "http://127.0.0.1:57020/api/preview/controlled-auto?frame=140&layers=%5B%7B%22analysis_id%22%3A%22controlled-auto%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A20%2C%22end%22%3A100%2C%22style%22%3A%22black%22%2C%22strength%22%3A100%2C%22targets%22%3A%5B%22face%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-a%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A40%2C%22end%22%3A120%2C%22style%22%3A%22blur%22%2C%22strength%22%3A65%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%2C%7B%22analysis_id%22%3A%22controlled-custom-b%22%2C%22mask_regions%22%3A%5B%7B%22id%22%3A%22legacy%22%2C%22start%22%3A60%2C%22end%22%3A140%2C%22style%22%3A%22mosaic%22%2C%22strength%22%3A80%2C%22targets%22%3A%5B%22custom%22%5D%2C%22faceMode%22%3A%22all%22%2C%22faceShape%22%3A%22circumscribed%22%2C%22personIds%22%3A%5B%5D%2C%22maskPending%22%3Atrue%7D%5D%7D%5D",
+      "at": 11121.5,
+      "aborted": false,
+      "status": 200,
+      "headersAt": 11173.79999999702,
+      "bodyEnd": 11174.09999999404
+    }
+  ],
+  "cleanup": {
+    "owned_server_pid": 37184,
+    "exit": 1,
+    "webview_destroyed": true
+  },
+  "sources_unchanged": {
+    "index.html": true,
+    "layers_ui.js": true,
+    "workspace_ui.js": true,
+    "workspace_ui.css": true,
+    "server.py": true,
+    "preview_video.py": true,
+    "sam_service.py": true,
+    "mask_timeline.py": true,
+    "mask_layers.py": true,
+    "sam_engine.py": true,
+    "masking.py": true
+  }
+}

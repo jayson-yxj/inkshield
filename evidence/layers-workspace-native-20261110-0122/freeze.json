@@ -1,0 +1,13 @@
+{
+  "index.html": "e92afad63ff97f525b2278ba032a49780ad94a9ff54081effb8a7e3a52b2c00f",
+  "layers_ui.js": "060c38ffeb85f0b5fad278c4ff98d17338812defbc9b3e52e97268044f3de6fa",
+  "workspace_ui.js": "5ddfd408bebbf93eeb446bb5f6458ce42f05d1c0ac1937318c53bafb0fc024a7",
+  "workspace_ui.css": "d8a8c2a79d05e25c12042de114233fa378e23727e1859221356f5ebbb2b98b7a",
+  "server.py": "53fc8ebb1f925137ab8f75c9652e3802ef8e8ec1689c2edf4926e2486e3e33c0",
+  "preview_video.py": "f6f1a958e0a4372b9551ced8fc2e011990ab32e5eab92ea978d4db6082a4d5ad",
+  "sam_service.py": "2dc72accc22f537c23cc04f7334b65814f5a091569919cdd1cdbce89c5588465",
+  "mask_timeline.py": "1b04663002ee3703a1e5f3f8b2c2e9332e8678aedcac828cb8598d82adeabd38",
+  "mask_layers.py": "6b4b41c56637430b47c9a20f27fea4fd401e146be8643ae038f78bb42f3d3476",
+  "sam_engine.py": "7bfdc34a141d0e9df889e089717f1768966ef555d162e5e3796a86e4833e00f9",
+  "masking.py": "28bd5cfb579419a292d67a105b18fd732f7590e561e2b64a38b785c71f0b053f"
+}

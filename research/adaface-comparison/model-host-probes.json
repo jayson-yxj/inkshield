@@ -1,0 +1,26 @@
+[
+  {
+    "name": "hfmirror-files",
+    "url": "https://hf-mirror.com/api/models/minchul/cvlface_adaface_ir50_ms1mv2/tree/main?recursive=true",
+    "bytes": 2973,
+    "sha256": "c3fdcd98cfc5e6e7681cfeebe9e1773ef3baadb57d847d91cd1b92118926c2fb"
+  },
+  {
+    "name": "hfmirror-readme",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/raw/main/README.md",
+    "bytes": 2760,
+    "sha256": "c4e6f3068939e31ee0c4408e7530475f93adddee5b36ee17543aaedfa3703c66"
+  },
+  {
+    "name": "gh-releases",
+    "url": "https://api.github.com/repos/mk-minchul/AdaFace/releases",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "name": "gh-readme-cvlface",
+    "url": "https://api.github.com/repos/mk-minchul/CVLface/contents/README.md",
+    "bytes": 17969,
+    "sha256": "0714b5dce25699fcebb46bca7c5e2a8f675d3f800d8b27a63973282111d151b4"
+  }
+]

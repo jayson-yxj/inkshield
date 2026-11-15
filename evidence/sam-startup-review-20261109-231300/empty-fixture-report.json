@@ -1,0 +1,44 @@
+{
+  "scope": "Controlled mocked-engine fixture; proves empty-mask API/storage contract only; no actual SAM inference or real-video exit claim",
+  "empty_preview": {
+    "http": 200,
+    "empty": true,
+    "alpha_nonzero": 0,
+    "lock_released": true
+  },
+  "propagation": {
+    "state": "ready",
+    "alpha_nonzero_per_frame": [
+      100,
+      0,
+      0
+    ],
+    "immutable": [
+      true,
+      true,
+      true
+    ]
+  },
+  "empty_compositor_preserves_frame": true,
+  "real_export": {
+    "state": "done",
+    "bytes": 1238,
+    "decoded_frames": 3,
+    "shape": [
+      48,
+      64,
+      3
+    ],
+    "source_constant": 120,
+    "frame_mae_to_source": [
+      21.10275650024414,
+      2.6666667461395264,
+      2.6666667461395264
+    ],
+    "empty_frame_mae_limit": 8,
+    "first_mask_center_mean": 0.0,
+    "path": "D:\\\u8d22\u5bcc\u5bc6\u7801\\face-mosaic-prototype\\evidence\\sam-startup-review-20261109-231300\\empty-fixture-real-export.mp4",
+    "scope": "Official export/writer and actual MP4 decode; masks supplied by controlled engine fixture"
+  },
+  "passed": true
+}

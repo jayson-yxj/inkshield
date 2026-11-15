@@ -1,0 +1,548 @@
+{
+  "hashes": {
+    "mask_timeline.py": "1b04663002ee3703a1e5f3f8b2c2e9332e8678aedcac828cb8598d82adeabd38",
+    "index.html": "32cd82414507f7849031799e67fa06bc494930403d727c089f9a0a04d2ee8290",
+    "mask_layers.py": "6b4b41c56637430b47c9a20f27fea4fd401e146be8643ae038f78bb42f3d3476",
+    "sam_service.py": "2dc72accc22f537c23cc04f7334b65814f5a091569919cdd1cdbce89c5588465",
+    "layers_ui.js": "949153f0e59ce47b49339555e8dc86906cb4977f69d68e333d1ec06dd782e520",
+    "workspace_ui.css": "bdcdd2f94b943347bac4186dcd2510e8f0fd44bd920ad4bb563e9b07faf6085a",
+    "preview_video.py": "f6f1a958e0a4372b9551ced8fc2e011990ab32e5eab92ea978d4db6082a4d5ad",
+    "server.py": "53fc8ebb1f925137ab8f75c9652e3802ef8e8ec1689c2edf4926e2486e3e33c0",
+    "sam_engine.py": "7bfdc34a141d0e9df889e089717f1768966ef555d162e5e3796a86e4833e00f9",
+    "workspace_ui.js": "02a54392cdc2bd14e5943fefc0748af13e8a6f356a32ecc48eabbd9bc04efdc2"
+  },
+  "suite_sha256": "2f4d11f9b1ae445337f2cf5a9e3f73a00803362128749dcaa8ad2b161f19ee32",
+  "harness_sha256": "0ca8f2caf860494c48aad1c13d2d632e50780d88d24d1b6ea4ac35b863cc8c1f",
+  "input_method": "Real WebView2 with synthetic DOM click/input events; immutable controlled analysis fixtures; no inference",
+  "passed": false,
+  "service": {
+    "pid": 37788,
+    "url": "http://127.0.0.1:57711/"
+  },
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+  "dom": {
+    "state": "failed",
+    "checks": [
+      {
+        "name": "header actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(51, 70, 86)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": "header intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 52)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(51, 70, 86)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".import-button actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 2,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".import-button intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 2,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 2,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": "#viewer actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          "b": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(141, 204, 255, 0.25)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(174, 220, 255) 0px 0px 0px 1px inset, rgba(141, 204, 255, 0.25) 0px 0px 30px 5px inset"
+          }
+        }
+      },
+      {
+        "name": "#viewer intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          "mid": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(161, 232, 124, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 131) 0px 0px 0px 1px inset, rgba(161, 232, 124, 0.208) 0px 0px 30px 5px inset"
+          },
+          "b": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(141, 204, 255, 0.25)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(174, 220, 255) 0px 0px 0px 1px inset, rgba(141, 204, 255, 0.25) 0px 0px 30px 5px inset"
+          }
+        }
+      },
+      {
+        "name": ".timeline-clip.active actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 4,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 6,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".timeline-clip.active intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 4,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 6,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 6,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".layer-item.active actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 5,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 7,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".layer-item.active intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 5,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 7,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 7,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": "layer is rebuilt during mode toggle",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel initial label",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel collapsed semantics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel restore reachable",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel restored",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel initial label",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel collapsed semantics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel restore reachable",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel restored",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel initial label",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel collapsed semantics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel restore reachable",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel restored",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "single visible toolbar",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared split edits effect only",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared undo effect split",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared delete removes effect",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared undo effect delete",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared split edits video",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared delete merges video",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared undo video merge",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "raw slider synchronizes global start",
+        "passed": true,
+        "details": {
+          "globalFrame": 0,
+          "slider": "0",
+          "sourceTime": 0
+        }
+      },
+      {
+        "name": "continuous selection cleared",
+        "passed": true,
+        "details": null
+      }
+    ],
+    "observations": [
+      {
+        "case": "actual toggle rebuilt nodes",
+        "a": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 4,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 5,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        },
+        "immediate": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 6,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 7,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        },
+        "mid": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 52)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(161, 232, 124, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 131) 0px 0px 0px 1px inset, rgba(161, 232, 124, 0.208) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 6,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 7,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        },
+        "b": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(51, 70, 86)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(141, 204, 255, 0.25)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(174, 220, 255) 0px 0px 0px 1px inset, rgba(141, 204, 255, 0.25) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 6,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 7,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      }
+    ],
+    "error": "Error: Timeout ()=>playing&&!startingPlayback\n    at Object.wait (eval at <anonymous> (:4:29), <anonymous>:6:146)\n    at async Object.playback (eval at <anonymous> (:4:29), <anonymous>:13:78)\n    at async window.runSuite (eval at <anonymous> (:4:29), <anonymous>:28:333)"
+  },
+  "browser_errors": [],
+  "reduced_motion": {
+    "matches": true,
+    "icon": "0s",
+    "viewer": "0s",
+    "ring": "0s"
+  },
+  "error": "Traceback (most recent call last):\n  File \"D:\\财富密码\\face-mosaic-prototype\\evidence\\preview-toolbar-native\\native_acceptance.py\", line 85, in run\n    assert report['dom']['state']=='done',report['dom'].get('error')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Error: Timeout ()=>playing&&!startingPlayback\n    at Object.wait (eval at <anonymous> (:4:29), <anonymous>:6:146)\n    at async Object.playback (eval at <anonymous> (:4:29), <anonymous>:13:78)\n    at async window.runSuite (eval at <anonymous> (:4:29), <anonymous>:28:333)\n"
+}

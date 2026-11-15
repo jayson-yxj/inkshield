@@ -1,0 +1,39 @@
+[
+  {
+    "name": "readme-api",
+    "url": "https://api.github.com/repos/mk-minchul/AdaFace/contents/README.md",
+    "status": 200,
+    "bytes": 24497,
+    "sha256": "38da7824670c7385a0f037e766702536722750f3a6d5fd67c30223e8b9ef8dad"
+  },
+  {
+    "name": "readme-cdn",
+    "url": "https://cdn.jsdelivr.net/gh/mk-minchul/AdaFace@master/README.md",
+    "error": "ConnectError('[WinError 10054] \u8fdc\u7a0b\u4e3b\u673a\u5f3a\u8feb\u5173\u95ed\u4e86\u4e00\u4e2a\u73b0\u6709\u7684\u8fde\u63a5\u3002')"
+  },
+  {
+    "name": "net-cdn",
+    "url": "https://cdn.jsdelivr.net/gh/mk-minchul/AdaFace@master/net.py",
+    "error": "ConnectError('[WinError 10054] \u8fdc\u7a0b\u4e3b\u673a\u5f3a\u8feb\u5173\u95ed\u4e86\u4e00\u4e2a\u73b0\u6709\u7684\u8fde\u63a5\u3002')"
+  },
+  {
+    "name": "inference-cdn",
+    "url": "https://cdn.jsdelivr.net/gh/mk-minchul/AdaFace@master/inference.py",
+    "error": "ConnectError('[WinError 10054] \u8fdc\u7a0b\u4e3b\u673a\u5f3a\u8feb\u5173\u95ed\u4e86\u4e00\u4e2a\u73b0\u6709\u7684\u8fde\u63a5\u3002')"
+  },
+  {
+    "name": "license-cdn",
+    "url": "https://cdn.jsdelivr.net/gh/mk-minchul/AdaFace@master/LICENSE",
+    "error": "ConnectError('[WinError 10054] \u8fdc\u7a0b\u4e3b\u673a\u5f3a\u8feb\u5173\u95ed\u4e86\u4e00\u4e2a\u73b0\u6709\u7684\u8fde\u63a5\u3002')"
+  },
+  {
+    "name": "hf-readme",
+    "url": "https://huggingface.co/minchul/cvlface_adaface_ir50_ms1mv2/raw/main/README.md",
+    "error": "ConnectTimeout('timed out')"
+  },
+  {
+    "name": "hf-files",
+    "url": "https://huggingface.co/api/models/minchul/cvlface_adaface_ir50_ms1mv2/tree/main?recursive=true",
+    "error": "ConnectTimeout('timed out')"
+  }
+]

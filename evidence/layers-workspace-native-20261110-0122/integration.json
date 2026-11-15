@@ -1,0 +1,60 @@
+{
+  "state": "frozen",
+  "source_files": [
+    "index.html",
+    "layers_ui.js",
+    "workspace_ui.js",
+    "workspace_ui.css"
+  ],
+  "acceptance_hashes": {
+    "dom_suite.js": "5c62fbf56e94641c819ea21cf9122156d6f4d8f1469d21729f206bc6ea3b0920",
+    "frozen_adapter.js": "d5751b89b47ba929caeafd886cf688c18fe26b5aea2cc070ba6a98c4c425023b",
+    "workspace_probe.js": "21fc14d77b24b42bc263c3d006d7bdc2373b3f708066a4f871954bf5cc95cd56",
+    "workspace_cases.js": "2cc52b4ffca081c45c2b3732a8a79b24da32003f82fa79c6f6466cc054a25700",
+    "sam_cases.js": "5be73f6229fcea3441da5f9164c9994f7e472fc047d179e9923134e356e562f8",
+    "tail_cases.js": "8733e15f443cb609a70fd6888b9b3c559ef193eff44af58221b3c31a2a04e043",
+    "pixel_capture.js": "a3dffebc3ed11237988e9e9d2066d9e17d4b90110157b7f7abf0b80495a4bd74",
+    "reference_builder.py": "24ce75889582048822d7bce0584222ab78201cf0f3fded7e7ae3dad39639f08e",
+    "pixel_oracle.py": "40ef5b09c0b26a87efaf5131db22f96645bcf69d85eaf13bd3b61201d0c9d4f1",
+    "controlled_fixtures.py": "0789b88f486766358116fb3ca2923e61570f01010a56e3c28826b609e11481e4",
+    "verify_mask_timeline_native.py": "9835d03893d1f8cef1ce13ed015d3bd7a6d84e821932e82e9377034e6e505030"
+  },
+  "backend_sam_over_five_evidence": {
+    "path": "BACKEND_LAYERS_REVIEW.md",
+    "sha256": "b5348eceb1c23e60fcac1b3e53110c88825c2c37f107472c70a03defa8e529f5",
+    "test": "tests/test_sam_integration.py",
+    "test_sha256": "09642c17ec600fdc5b49bd55e4ccfe0507bafa01169f7b7fdcea1b4c76c50ddd",
+    "note": "Parent reported 51 tests/12.624 sec including seven analyses; this run uses controlled masks, not inference."
+  },
+  "selectors": {
+    "transform": "#previewTransform",
+    "zoom_reset": "#previewZoomReset",
+    "toggle_left": "#toggleMediaPanel",
+    "toggle_right": "#toggleInspectorPanel",
+    "toggle_bottom": "#toggleTimelinePanel",
+    "layer_create": "#layerPanel button (exact text + 自动层 / + 自定义层)",
+    "layer_select": "#layerPanel button[aria-pressed]",
+    "layer_active_clear": "#deleteMaskRegion",
+    "layer_region": ".timeline-mask[data-layer-id] within .layer-mask-row",
+    "layer_region_start": ".mask-handle.start",
+    "layer_region_end": ".mask-handle.end"
+  },
+  "layout_settled_event": "workspace:layoutsettled",
+  "toggle_state": "aria-expanded",
+  "pan_gesture": "custom: Space+left or middle; noncustom: left",
+  "sam_coordinate_contract": "getBoundingClientRect on transformed displayed media; do not apply inverse twice",
+  "required_artifacts": [
+    "preview JPEG",
+    "protected H264",
+    "export",
+    "browser request log",
+    "ROI and order comparisons",
+    "panel before/during/after geometry",
+    "SAM click source coordinates and frame/layer token"
+  ],
+  "input_method": "synthetic DOM PointerEvent/WheelEvent/KeyboardEvent, not OS mouse automation",
+  "pixel_expectations": {
+    "protected": [],
+    "export": []
+  }
+}

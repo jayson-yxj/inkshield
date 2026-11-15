@@ -1,0 +1,23 @@
+{
+  "state": {
+    "url": "http://127.0.0.1:50164"
+  },
+  "checks": [
+    "Automatic ready device adopted",
+    "Ready status visible",
+    "Original full 6454-frame range retained",
+    "Long clip can preview but propagation disabled with clear 150 limit"
+  ],
+  "source_bytes": 31758566,
+  "source_sha256": "5d54f47d20f78bd60af6a2d30e330011c09d472b1109afaf249c1952a9efbb9c",
+  "last_js": "(()=>{window.__clicks=[];for(const kind of ['pointerdown','pointerup','click'])document.addEventListener(kind,e=>__clicks.push({kind,x:e.clientX,y:e.clientY,target:e.target.id}),true);return true})()",
+  "served_index_sha256": "67d1d5f468a2ee873618ff28a7b5d3d579adeb37f2e19ea42d7463979eb4e563",
+  "initial_warmup": {
+    "state": "ready",
+    "text": "SAM2.1 模型已就绪（GPU / CUDA） · 预热 11.29 秒；暂停后可点选目标。",
+    "blocked": false
+  },
+  "warming_observed": false,
+  "ready_device": "cuda",
+  "window_pid": 29924
+}

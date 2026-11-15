@@ -1,0 +1,818 @@
+{
+  "hashes": {
+    "mask_timeline.py": "1b04663002ee3703a1e5f3f8b2c2e9332e8678aedcac828cb8598d82adeabd38",
+    "index.html": "32cd82414507f7849031799e67fa06bc494930403d727c089f9a0a04d2ee8290",
+    "mask_layers.py": "6b4b41c56637430b47c9a20f27fea4fd401e146be8643ae038f78bb42f3d3476",
+    "sam_service.py": "2dc72accc22f537c23cc04f7334b65814f5a091569919cdd1cdbce89c5588465",
+    "layers_ui.js": "2c892051aa0cae2e55326cddd6c0e600961bc6f30ac175297f1eb4de106cf45b",
+    "workspace_ui.css": "bdcdd2f94b943347bac4186dcd2510e8f0fd44bd920ad4bb563e9b07faf6085a",
+    "preview_video.py": "f6f1a958e0a4372b9551ced8fc2e011990ab32e5eab92ea978d4db6082a4d5ad",
+    "server.py": "53fc8ebb1f925137ab8f75c9652e3802ef8e8ec1689c2edf4926e2486e3e33c0",
+    "sam_engine.py": "7bfdc34a141d0e9df889e089717f1768966ef555d162e5e3796a86e4833e00f9",
+    "workspace_ui.js": "02a54392cdc2bd14e5943fefc0748af13e8a6f356a32ecc48eabbd9bc04efdc2"
+  },
+  "suite_sha256": "c04ae33cc59ed03db4dd632b0573090a83f8e9183e82cb6b6eae898a03bde62a",
+  "harness_sha256": "e6f1e2839aa90dd9a6425b3c4bde2aba97c80f6f348a96503a94b6954bfd9206",
+  "input_method": "Real WebView2 with synthetic DOM click/input events; immutable controlled analysis fixtures; no inference",
+  "passed": false,
+  "service": {
+    "pid": 27904,
+    "url": "http://127.0.0.1:63401/"
+  },
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+  "dom": {
+    "state": "failed",
+    "checks": [
+      {
+        "name": "header actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(51, 70, 86)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": "header intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 52)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(51, 70, 86)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".import-button actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 2,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".import-button intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 2,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 2,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": "#viewer actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          "b": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(141, 204, 255, 0.25)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(174, 220, 255) 0px 0px 0px 1px inset, rgba(141, 204, 255, 0.25) 0px 0px 30px 5px inset"
+          }
+        }
+      },
+      {
+        "name": "#viewer intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          "mid": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(161, 232, 124, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 131) 0px 0px 0px 1px inset, rgba(161, 232, 124, 0.208) 0px 0px 30px 5px inset"
+          },
+          "b": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(141, 204, 255, 0.25)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(174, 220, 255) 0px 0px 0px 1px inset, rgba(141, 204, 255, 0.25) 0px 0px 30px 5px inset"
+          }
+        }
+      },
+      {
+        "name": ".timeline-clip.active actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 4,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 6,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".timeline-clip.active intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 4,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 6,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 6,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".layer-item.active actual theme changes",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 5,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 7,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": ".layer-item.active intermediate paint",
+        "passed": true,
+        "details": {
+          "a": {
+            "node": 5,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "mid": {
+            "node": 7,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          "b": {
+            "node": 7,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      },
+      {
+        "name": "layer is rebuilt during mode toggle",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel initial label",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel collapsed semantics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel restore reachable",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleMediaPanel restored",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel initial label",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel collapsed semantics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel restore reachable",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleInspectorPanel restored",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel initial label",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel collapsed semantics",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel restore reachable",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "toggleTimelinePanel restored",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "single visible toolbar",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared split edits effect only",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared undo effect split",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared delete removes effect",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared undo effect delete",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared split edits video",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared delete merges video",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "shared undo video merge",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "continuous selection cleared",
+        "passed": true,
+        "details": null
+      },
+      {
+        "name": "all pending across segments reaches final frame",
+        "passed": true,
+        "details": {
+          "before": {
+            "frame": 139,
+            "playing": false,
+            "startingPlayback": false,
+            "continuousMode": false,
+            "clipSelected": false,
+            "segments": [
+              {
+                "id": 2,
+                "start": 0,
+                "end": 140,
+                "activeLayerId": "layer-1",
+                "layers": [
+                  {
+                    "id": "layer-1",
+                    "analysisId": "",
+                    "analysisReady": false,
+                    "settings": {
+                      "mode": "automatic",
+                      "samPrompts": {},
+                      "samDevice": "cpu",
+                      "targets": [
+                        "face"
+                      ],
+                      "style": "mosaic",
+                      "strength": 68,
+                      "faceMode": "all",
+                      "faceShape": "circumscribed",
+                      "personIds": [],
+                      "maskPending": true,
+                      "maskRegions": [
+                        {
+                          "id": "legacy",
+                          "start": 0,
+                          "end": 140,
+                          "style": "mosaic",
+                          "strength": 68,
+                          "targets": [
+                            "face"
+                          ],
+                          "faceMode": "all",
+                          "faceShape": "circumscribed",
+                          "personIds": [],
+                          "maskPending": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "start": 140,
+                "end": 150,
+                "activeLayerId": "layer-1",
+                "layers": [
+                  {
+                    "id": "layer-1",
+                    "analysisId": "",
+                    "analysisReady": false,
+                    "settings": {
+                      "mode": "automatic",
+                      "samPrompts": {},
+                      "samDevice": "cpu",
+                      "targets": [
+                        "face"
+                      ],
+                      "style": "mosaic",
+                      "strength": 68,
+                      "faceMode": "all",
+                      "faceShape": "circumscribed",
+                      "personIds": [],
+                      "maskPending": true,
+                      "maskRegions": [
+                        {
+                          "id": "legacy",
+                          "start": 0,
+                          "end": 10,
+                          "style": "mosaic",
+                          "strength": 68,
+                          "targets": [
+                            "face"
+                          ],
+                          "faceMode": "all",
+                          "faceShape": "circumscribed",
+                          "personIds": [],
+                          "maskPending": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "after": {
+            "frame": 149,
+            "playing": false,
+            "startingPlayback": false,
+            "continuousMode": false,
+            "clipSelected": false,
+            "segments": [
+              {
+                "id": 2,
+                "start": 0,
+                "end": 140,
+                "activeLayerId": "layer-1",
+                "layers": [
+                  {
+                    "id": "layer-1",
+                    "analysisId": "",
+                    "analysisReady": false,
+                    "settings": {
+                      "mode": "automatic",
+                      "samPrompts": {},
+                      "samDevice": "cpu",
+                      "targets": [
+                        "face"
+                      ],
+                      "style": "mosaic",
+                      "strength": 68,
+                      "faceMode": "all",
+                      "faceShape": "circumscribed",
+                      "personIds": [],
+                      "maskPending": true,
+                      "maskRegions": [
+                        {
+                          "id": "legacy",
+                          "start": 0,
+                          "end": 140,
+                          "style": "mosaic",
+                          "strength": 68,
+                          "targets": [
+                            "face"
+                          ],
+                          "faceMode": "all",
+                          "faceShape": "circumscribed",
+                          "personIds": [],
+                          "maskPending": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "start": 140,
+                "end": 150,
+                "activeLayerId": "layer-1",
+                "layers": [
+                  {
+                    "id": "layer-1",
+                    "analysisId": "",
+                    "analysisReady": false,
+                    "settings": {
+                      "mode": "automatic",
+                      "samPrompts": {},
+                      "samDevice": "cpu",
+                      "targets": [
+                        "face"
+                      ],
+                      "style": "mosaic",
+                      "strength": 68,
+                      "faceMode": "all",
+                      "faceShape": "circumscribed",
+                      "personIds": [],
+                      "maskPending": true,
+                      "maskRegions": [
+                        {
+                          "id": "legacy",
+                          "start": 0,
+                          "end": 10,
+                          "style": "mosaic",
+                          "strength": 68,
+                          "targets": [
+                            "face"
+                          ],
+                          "faceMode": "all",
+                          "faceShape": "circumscribed",
+                          "personIds": [],
+                          "maskPending": true
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "all pending across segments actual media clock advances",
+        "passed": false,
+        "details": [
+          {
+            "at": 7685.5999999940395,
+            "frame": 139,
+            "segment": 2,
+            "sourceTime": 5.57724,
+            "protectedTime": 0,
+            "warning": "尚有 1 个待分析图层 · 原片预览（未保护） · 当前编辑自动层",
+            "sourceHidden": true,
+            "protectedHidden": true,
+            "canvasHidden": false
+          },
+          {
+            "at": 7766.4000000059605,
+            "frame": 140,
+            "segment": 3,
+            "sourceTime": 5.617128,
+            "protectedTime": 0,
+            "warning": "尚有 1 个待分析图层 · 原片预览（未保护）",
+            "sourceHidden": true,
+            "protectedHidden": true,
+            "canvasHidden": false
+          },
+          {
+            "at": 7847.5999999940395,
+            "frame": 141,
+            "segment": 3,
+            "sourceTime": 5.657313,
+            "protectedTime": 0,
+            "warning": "尚有 1 个待分析图层 · 原片预览（未保护）",
+            "sourceHidden": true,
+            "protectedHidden": true,
+            "canvasHidden": false
+          },
+          {
+            "at": 7928.5999999940395,
+            "frame": 143,
+            "segment": 3,
+            "sourceTime": 5.738353,
+            "protectedTime": 0,
+            "warning": "尚有 1 个待分析图层 · 原片预览（未保护）",
+            "sourceHidden": true,
+            "protectedHidden": true,
+            "canvasHidden": false
+          },
+          {
+            "at": 8010.29999999702,
+            "frame": 145,
+            "segment": 3,
+            "sourceTime": 5.820097,
+            "protectedTime": 0,
+            "warning": "尚有 1 个待分析图层 · 原片预览（未保护）",
+            "sourceHidden": true,
+            "protectedHidden": true,
+            "canvasHidden": false
+          },
+          {
+            "at": 8090.9000000059605,
+            "frame": 147,
+            "segment": 3,
+            "sourceTime": 5.900082,
+            "protectedTime": 0,
+            "warning": "尚有 1 个待分析图层 · 原片预览（未保护）",
+            "sourceHidden": true,
+            "protectedHidden": true,
+            "canvasHidden": false
+          },
+          {
+            "at": 8171.5999999940395,
+            "frame": 149,
+            "segment": 3,
+            "sourceTime": 5.981072,
+            "protectedTime": 0,
+            "warning": "尚有 1 个待分析图层 · 原片预览（未保护）",
+            "sourceHidden": true,
+            "protectedHidden": true,
+            "canvasHidden": false
+          }
+        ]
+      }
+    ],
+    "observations": [
+      {
+        "case": "actual toggle rebuilt nodes",
+        "a": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 4,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 5,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        },
+        "immediate": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 51)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(162, 233, 120, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 128) 0px 0px 0px 1px inset, rgba(162, 233, 120, 0.208) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 6,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 244, 219)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 7,
+            "bg": "rgb(53, 73, 43)",
+            "border": "rgb(184, 237, 128)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        },
+        "mid": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(48, 61, 52)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(161, 232, 124, 0.208)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(184, 237, 131) 0px 0px 0px 1px inset, rgba(161, 232, 124, 0.208) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 6,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 244, 220)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 7,
+            "bg": "rgb(53, 73, 44)",
+            "border": "rgb(184, 237, 131)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        },
+        "b": {
+          "header": {
+            "node": 1,
+            "bg": "rgba(0, 0, 0, 0)",
+            "border": "rgb(229, 231, 236) rgb(229, 231, 236) rgb(51, 70, 86)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          },
+          ".import-button": {
+            "node": 2,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          },
+          "#viewer": {
+            "node": 3,
+            "bg": "rgb(9, 10, 12)",
+            "border": "rgba(141, 204, 255, 0.25)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "rgb(174, 220, 255) 0px 0px 0px 1px inset, rgba(141, 204, 255, 0.25) 0px 0px 30px 5px inset"
+          },
+          ".timeline-clip.active": {
+            "node": 6,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(225, 242, 255)",
+            "shadow": "none"
+          },
+          ".timeline-mask": null,
+          ".layer-item.active": {
+            "node": 7,
+            "bg": "rgb(48, 75, 97)",
+            "border": "rgb(174, 220, 255)",
+            "color": "rgb(229, 231, 236)",
+            "shadow": "none"
+          }
+        }
+      }
+    ],
+    "error": "Error: all pending across segments actual media clock advances: [{\"at\":7685.5999999940395,\"frame\":139,\"segment\":2,\"sourceTime\":5.57724,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护） · 当前编辑自动层\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":7766.4000000059605,\"frame\":140,\"segment\":3,\"sourceTime\":5.617128,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":7847.5999999940395,\"frame\":141,\"segment\":3,\"sourceTime\":5.657313,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":7928.5999999940395,\"frame\":143,\"segment\":3,\"sourceTime\":5.738353,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":8010.29999999702,\"frame\":145,\"segment\":3,\"sourceTime\":5.820097,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":8090.9000000059605,\"frame\":147,\"segment\":3,\"sourceTime\":5.900082,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":8171.5999999940395,\"frame\":149,\"segment\":3,\"sourceTime\":5.981072,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false}]\n    at Object.check (eval at <anonymous> (:4:29), <anonymous>:5:100)\n    at Object.playback (eval at <anonymous> (:4:29), <anonymous>:13:756)\n    at async window.runSuite (eval at <anonymous> (:4:29), <anonymous>:28:135)"
+  },
+  "browser_errors": [],
+  "reduced_motion": {
+    "matches": true,
+    "icon": "0s",
+    "viewer": "0s",
+    "ring": "0s"
+  },
+  "error": "Traceback (most recent call last):\n  File \"D:\\财富密码\\face-mosaic-prototype\\evidence\\preview-toolbar-native\\native_acceptance.py\", line 85, in run\n    assert report['dom']['state']=='done',report['dom'].get('error')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Error: all pending across segments actual media clock advances: [{\"at\":7685.5999999940395,\"frame\":139,\"segment\":2,\"sourceTime\":5.57724,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护） · 当前编辑自动层\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":7766.4000000059605,\"frame\":140,\"segment\":3,\"sourceTime\":5.617128,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":7847.5999999940395,\"frame\":141,\"segment\":3,\"sourceTime\":5.657313,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":7928.5999999940395,\"frame\":143,\"segment\":3,\"sourceTime\":5.738353,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":8010.29999999702,\"frame\":145,\"segment\":3,\"sourceTime\":5.820097,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":8090.9000000059605,\"frame\":147,\"segment\":3,\"sourceTime\":5.900082,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false},{\"at\":8171.5999999940395,\"frame\":149,\"segment\":3,\"sourceTime\":5.981072,\"protectedTime\":0,\"warning\":\"尚有 1 个待分析图层 · 原片预览（未保护）\",\"sourceHidden\":true,\"protectedHidden\":true,\"canvasHidden\":false}]\n    at Object.check (eval at <anonymous> (:4:29), <anonymous>:5:100)\n    at Object.playback (eval at <anonymous> (:4:29), <anonymous>:13:756)\n    at async window.runSuite (eval at <anonymous> (:4:29), <anonymous>:28:135)\n"
+}

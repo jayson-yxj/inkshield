@@ -1,0 +1,201 @@
+{
+  "source_sha256_before": "4a126acb96994aafa8d64ccc037d66de996f435384c7cd857ceb31bd8e887592",
+  "engine": "edgechromium",
+  "url": "http://127.0.0.1:50164/",
+  "checks": [
+    {
+      "name": "real dialog open",
+      "ok": true
+    },
+    {
+      "name": "same-origin tutorial route",
+      "ok": true,
+      "detail": "http://127.0.0.1:50164/tutorial"
+    },
+    {
+      "name": "version and duration",
+      "ok": true
+    },
+    {
+      "name": "eight chapters",
+      "ok": true
+    },
+    {
+      "name": "chapter 1",
+      "ok": true
+    },
+    {
+      "name": "chapter 2",
+      "ok": true
+    },
+    {
+      "name": "chapter 3",
+      "ok": true
+    },
+    {
+      "name": "chapter 4",
+      "ok": true
+    },
+    {
+      "name": "chapter 5",
+      "ok": true
+    },
+    {
+      "name": "chapter 6",
+      "ok": true
+    },
+    {
+      "name": "chapter 7",
+      "ok": true
+    },
+    {
+      "name": "chapter 8",
+      "ok": true
+    },
+    {
+      "name": "all 769 sampled frames render",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "end state",
+      "ok": true
+    },
+    {
+      "name": "play at end restarts",
+      "ok": true
+    },
+    {
+      "name": "pause holds clock",
+      "ok": true
+    },
+    {
+      "name": "range input seeks",
+      "ok": true
+    },
+    {
+      "name": "replay starts zero",
+      "ok": true
+    },
+    {
+      "name": "native RAF advances",
+      "ok": true
+    },
+    {
+      "name": "continuous pointer at 1ms resolution",
+      "ok": true,
+      "detail": {
+        "maxJump": 1.498493570463458,
+        "maxBoundaryJump": 0.6726490600691546,
+        "maxVelocityMismatch": 0.07742759274791935,
+        "maxClickMiss": 0
+      }
+    },
+    {
+      "name": "continuous chapter boundaries",
+      "ok": true,
+      "detail": {
+        "maxJump": 1.498493570463458,
+        "maxBoundaryJump": 0.6726490600691546,
+        "maxVelocityMismatch": 0.07742759274791935,
+        "maxClickMiss": 0
+      }
+    },
+    {
+      "name": "matching key velocities",
+      "ok": true,
+      "detail": {
+        "maxJump": 1.498493570463458,
+        "maxBoundaryJump": 0.6726490600691546,
+        "maxVelocityMismatch": 0.07742759274791935,
+        "maxClickMiss": 0
+      }
+    },
+    {
+      "name": "clicks meet cursor",
+      "ok": true,
+      "detail": {
+        "maxJump": 1.498493570463458,
+        "maxBoundaryJump": 0.6726490600691546,
+        "maxVelocityMismatch": 0.07742759274791935,
+        "maxClickMiss": 0
+      }
+    },
+    {
+      "name": "failure preserves completed layer",
+      "ok": true
+    },
+    {
+      "name": "retry completes pending layer",
+      "ok": true
+    },
+    {
+      "name": "batch first completion is 50 percent",
+      "ok": true
+    },
+    {
+      "name": "failed queue progress does not rewind",
+      "ok": true
+    },
+    {
+      "name": "retry has independent one-layer progress",
+      "ok": true
+    },
+    {
+      "name": "effect click targets layer three row",
+      "ok": true
+    },
+    {
+      "name": "positive point is inside clothing target",
+      "ok": true
+    },
+    {
+      "name": "close dialog before retry click",
+      "ok": true
+    },
+    {
+      "name": "empty layer blocks export until removed",
+      "ok": true
+    },
+    {
+      "name": "chapter controls reachable by iframe scrolling",
+      "ok": true,
+      "detail": {
+        "rect": {
+          "x": 58.400001525878906,
+          "y": 729.9000244140625,
+          "width": 1236,
+          "height": 59.400001525878906,
+          "top": 729.9000244140625,
+          "right": 1294.400001525879,
+          "bottom": 789.3000259399414,
+          "left": 58.400001525878906
+        },
+        "height": 790,
+        "scroll": 229.60000610351562
+      }
+    },
+    {
+      "name": "close unloads iframe and restores focus",
+      "ok": true
+    },
+    {
+      "name": "reopen creates fresh tutorial",
+      "ok": true
+    },
+    {
+      "name": "reduced-motion starts paused",
+      "ok": true
+    }
+  ],
+  "motion": {
+    "maxJump": 1.498493570463458,
+    "maxBoundaryJump": 0.6726490600691546,
+    "maxVelocityMismatch": 0.07742759274791935,
+    "maxClickMiss": 0
+  },
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+  "source_sha256_after": "4a126acb96994aafa8d64ccc037d66de996f435384c7cd857ceb31bd8e887592",
+  "passed": 36,
+  "source_unchanged": true
+}

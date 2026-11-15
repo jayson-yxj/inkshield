@@ -1,0 +1,60 @@
+{
+  "state": {
+    "pid": 40832,
+    "url": "http://127.0.0.1:50164/",
+    "data_dir": "D:\\财富密码\\face-mosaic-prototype\\runtime\\sam-web-review-20261109-225157-final",
+    "frozen": false
+  },
+  "source": "C:\\Users\\36301\\Desktop\\5.mp4",
+  "source_sha256": "5d54f47d20f78bd60af6a2d30e330011c09d472b1109afaf249c1952a9efbb9c",
+  "source_bytes": 31758566,
+  "code_sha256": {
+    "sam_service.py": "2eede9e1c3acf4e5eefbe9f5726236584b3bfe148fb920a66d0fc336fdfc4c21",
+    "sam_engine.py": "e945e3686c1a3ed3d7649a42b09f857407f7c5a2d91b092cc2bc2b7b1ff32f7a"
+  },
+  "capabilities": {
+    "status": 200,
+    "seconds": 13.222145099993213,
+    "response_file": "capabilities-response.json"
+  },
+  "upload": {
+    "status": 200,
+    "seconds": 0.5654216999973869,
+    "response_file": "upload-response.json"
+  },
+  "media": {
+    "ok": true,
+    "media_id": "44eea13b18d44a48bc6346c66a4e8d68",
+    "frames": 6454,
+    "fps": 25.0,
+    "width": 1280,
+    "height": 720
+  },
+  "preview": {
+    "status": 200,
+    "seconds": 14.259482900000876,
+    "response_file": "preview-response.json",
+    "png_bytes": 7998,
+    "decoded_shape": [
+      720,
+      1280,
+      4
+    ],
+    "alpha_nonzero": 15779,
+    "timing_ms": {
+      "model_load": 2199.209600003087,
+      "encoder": 11794.571500009624,
+      "decoder": 129.38569999823812
+    },
+    "cache_hit": false
+  },
+  "analyze_long": {
+    "status": 422,
+    "seconds": 0.008010700010345317,
+    "response_file": "analyze_long-response.json",
+    "detail": {
+      "detail": "SAM2.1 传播最多 150 帧；请先分割片段。单帧点选预览不受片段长度限制"
+    }
+  },
+  "passed": true
+}

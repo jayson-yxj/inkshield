@@ -1,0 +1,12 @@
+{
+  "index.html": "2ab01b18479fd30d392eab0408f56e47e09e70f60db4963f71906c037d9e9703",
+  "layers_ui.js": "1914733bac4a5cfb7b78f695ec010da93db11e877e21679805fe5d7c12915e5f",
+  "workspace_ui.css": "a2bbb4ac348adb659a7498cc1ab242fd0b41c125f84c8dbb8b14cb7e15beebb0",
+  "workspace_ui.js": "5ddfd408bebbf93eeb446bb5f6458ce42f05d1c0ac1937318c53bafb0fc024a7",
+  "server.py": "53fc8ebb1f925137ab8f75c9652e3802ef8e8ec1689c2edf4926e2486e3e33c0",
+  "mask_layers.py": "6b4b41c56637430b47c9a20f27fea4fd401e146be8643ae038f78bb42f3d3476",
+  "mask_timeline.py": "1b04663002ee3703a1e5f3f8b2c2e9332e8678aedcac828cb8598d82adeabd38",
+  "sam_service.py": "2dc72accc22f537c23cc04f7334b65814f5a091569919cdd1cdbce89c5588465",
+  "preview_video.py": "f6f1a958e0a4372b9551ced8fc2e011990ab32e5eab92ea978d4db6082a4d5ad",
+  "sam_engine.py": "7bfdc34a141d0e9df889e089717f1768966ef555d162e5e3796a86e4833e00f9"
+}

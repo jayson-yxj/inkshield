@@ -1,0 +1,157 @@
+{
+  "scope": "Controlled immutable synthetic masks; real production endpoint encoder and actual Windows WebView2; no SAM quality claim; DOM interactions only",
+  "checks": [
+    "actual 150-frame six-second audio fixture imported"
+  ],
+  "hashes": {
+    "index.html": "6e1c0e40e988edf4afe654f0de6eecbd5d9414279557bff6d63cdd93808ab720",
+    "server.py": "f0d0258aca8d81b9e8f5fbbf1407b1003753ff7fc84a74dc14fe0560a3e3c134",
+    "preview_video.py": "b1df3f9a1853ed75e1315b4f6492edef4376e5bdf39d7f424551e8d4eb1d7783",
+    "sam_service.py": "e7288b20ab7bdaa0bae4f870b8092a7a49597db2b3e276418e42816e88b49c1b"
+  },
+  "owned_server_pid": 32708,
+  "served_html_sha256": "6e1c0e40e988edf4afe654f0de6eecbd5d9414279557bff6d63cdd93808ab720",
+  "service": {
+    "pid": 32708,
+    "url": "http://127.0.0.1:59464/"
+  },
+  "passed": false,
+  "error": "Traceback (most recent call last):\n  File \"D:\\财富密码\\face-mosaic-prototype\\evidence\\sam-smooth-playback-20261109-2340\\verify_smooth_native.py\", line 80, in run\n    wait('playing&&!startingPlayback')\n  File \"D:\\财富密码\\face-mosaic-prototype\\evidence\\sam-smooth-playback-20261109-2340\\verify_smooth_native.py\", line 63, in wait\n    raise AssertionError('Timeout '+expr+'; '+str(js(\"({playing,startingPlayback,globalFrame,status:$('#statusText').textContent,note:$('#playbackNote').textContent,feedback:$('#previewFeedback').textContent})\")))\nAssertionError: Timeout playing&&!startingPlayback; {'playing': False, 'startingPlayback': False, 'globalFrame': 0, 'status': '当前片段缓存已恢复', 'note': ' 自定义播放按需读取缓存合成帧；可能延迟，等待时保留上一帧。', 'feedback': '保护视频播放失败：保护视频任务状态无效；可重试或逐帧检查。'}\n",
+  "failure_state": {
+    "playing": false,
+    "startingPlayback": false,
+    "globalFrame": 0,
+    "source": {
+      "time": 0,
+      "paused": true,
+      "muted": true
+    },
+    "videos": [
+      {
+        "id": "source",
+        "time": 0,
+        "paused": true,
+        "muted": true,
+        "ready": 4,
+        "width": 320,
+        "height": 240,
+        "src": "blob:http://127.0.0.1:59464/4f5853ff-8e61-48d2-b192-f7c91607e7e0",
+        "hidden": true,
+        "quality": {
+          "creationTime": 45748.70000000298,
+          "totalVideoFrames": 8,
+          "droppedVideoFrames": 0,
+          "corruptedVideoFrames": 0
+        }
+      },
+      {
+        "id": "protectedPlayback",
+        "time": 0,
+        "paused": true,
+        "muted": true,
+        "ready": 0,
+        "width": 0,
+        "height": 0,
+        "src": "",
+        "hidden": true,
+        "quality": {
+          "creationTime": 45748.70000000298,
+          "totalVideoFrames": 0,
+          "droppedVideoFrames": 0,
+          "corruptedVideoFrames": 0
+        }
+      }
+    ],
+    "callbacks": [],
+    "requests": [
+      {
+        "url": "http://127.0.0.1:59464/api/media",
+        "method": "POST",
+        "at": 246.29999999701977,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/playback/controlled-custom",
+        "method": "GET",
+        "at": 604.3999999910593,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/preview/controlled-custom?frame=0&target=custom&style=black&strength=68&face_mode=all&face_shape=circumscribed&person_ids=&mask_pending=true",
+        "method": "GET",
+        "at": 614.8999999910593
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/preview/controlled-custom?frame=0&target=custom&style=black&strength=68&face_mode=all&face_shape=circumscribed&person_ids=&mask_pending=true",
+        "method": "GET",
+        "at": 620.5999999940395,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/custom-playback/controlled-custom",
+        "method": "POST",
+        "at": 702.7000000029802,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/sam/warmup",
+        "method": "GET",
+        "at": 5152.29999999702,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/sam/warmup",
+        "method": "GET",
+        "at": 10161.89999999106,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/sam/warmup",
+        "method": "GET",
+        "at": 15171.70000000298,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/sam/warmup",
+        "method": "GET",
+        "at": 20182.09999999404,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/sam/warmup",
+        "method": "GET",
+        "at": 25197.09999999404,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/sam/warmup",
+        "method": "GET",
+        "at": 30220,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/sam/warmup",
+        "method": "GET",
+        "at": 35243,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/sam/warmup",
+        "method": "GET",
+        "at": 40257.20000000298,
+        "http": 200
+      },
+      {
+        "url": "http://127.0.0.1:59464/api/sam/warmup",
+        "method": "GET",
+        "at": 45271.5,
+        "http": 200
+      }
+    ]
+  },
+  "browser_errors": [],
+  "cleanup": {
+    "owned_server_exit": 1,
+    "webview_window_destroyed": true
+  }
+}

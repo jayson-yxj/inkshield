@@ -1,0 +1,59 @@
+# Local environments and generated Python files
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Build outputs and local runtime data
+/build/
+/dist/
+runtime/
+*.log
+.env
+.env.*
+!.env.example
+
+# Downloaded weights and binary dependencies
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.task
+*.whl
+*.zip
+*.7z
+*.dll
+*.exe
+
+# User media and generated diagnostic imagery (keep application assets)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
+*.npy
+*.npz
+/research/**/*.jpg
+/research/**/*.png
+/evidence/**/*.jpg
+/evidence/**/*.png
+/evidence/**/*.webp
+
+# Downloaded third-party source trees
+/research/hyperlpr3/
+/research/hyperlpr3-source/
+/research/insightface-models/
+/research/insightface-source/
+/research/sam21-prototype/vendor/
+/research/sam21-prototype/smoke-frames*/
+/research/adaface-comparison/cvlface-author/
+/research/adaface-comparison/cvlface-github/
+/research/adaface-comparison/official/
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

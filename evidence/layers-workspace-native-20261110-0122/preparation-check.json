@@ -1,0 +1,9 @@
+{
+  "python_syntax": "passed",
+  "fixture_install": "15 analyses; five aligned triples",
+  "immutable_masks": true,
+  "custom_exclusive_and_overlap_rois": true,
+  "native_acceptance": "NOT EXECUTED",
+  "server_started": false,
+  "port_50164_touched": false
+}

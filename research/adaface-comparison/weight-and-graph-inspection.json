@@ -1,0 +1,114 @@
+{
+  "old_new": {
+    "original_keys": 467,
+    "new_keys": 467,
+    "common_keys": 467,
+    "exact_equal_keys": 466,
+    "first_conv_equal": false,
+    "first_conv_channel_reversed_equal": true,
+    "first_conv_max_abs_diff": 0.5341389179229736,
+    "different_keys": [
+      "input_layer.0.weight"
+    ]
+  },
+  "arcface": {
+    "input": "name: \"input.1\"\ntype {\n  tensor_type {\n    elem_type: 1\n    shape {\n      dim {\n        dim_param: \"None\"\n      }\n      dim {\n        dim_value: 3\n      }\n      dim {\n        dim_value: 112\n      }\n      dim {\n        dim_value: 112\n      }\n    }\n  }\n}\n",
+    "first_nodes": [
+      {
+        "op": "Conv",
+        "input": [
+          "input.1",
+          "685",
+          "686"
+        ],
+        "output": [
+          "684"
+        ]
+      },
+      {
+        "op": "PRelu",
+        "input": [
+          "684",
+          "843"
+        ],
+        "output": [
+          "479"
+        ]
+      },
+      {
+        "op": "BatchNormalization",
+        "input": [
+          "479",
+          "layer1.0.bn1.weight",
+          "layer1.0.bn1.bias",
+          "layer1.0.bn1.running_mean",
+          "layer1.0.bn1.running_var"
+        ],
+        "output": [
+          "480"
+        ]
+      },
+      {
+        "op": "Conv",
+        "input": [
+          "480",
+          "688",
+          "689"
+        ],
+        "output": [
+          "687"
+        ]
+      },
+      {
+        "op": "PRelu",
+        "input": [
+          "687",
+          "844"
+        ],
+        "output": [
+          "484"
+        ]
+      },
+      {
+        "op": "Conv",
+        "input": [
+          "484",
+          "691",
+          "692"
+        ],
+        "output": [
+          "690"
+        ]
+      },
+      {
+        "op": "Conv",
+        "input": [
+          "479",
+          "694",
+          "695"
+        ],
+        "output": [
+          "693"
+        ]
+      },
+      {
+        "op": "Add",
+        "input": [
+          "690",
+          "693"
+        ],
+        "output": [
+          "489"
+        ]
+      }
+    ],
+    "op_types": [
+      "Add",
+      "BatchNormalization",
+      "Conv",
+      "Flatten",
+      "Gemm",
+      "PRelu"
+    ]
+  }
+}

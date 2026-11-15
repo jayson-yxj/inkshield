@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隐映 · 启动动画预览</title>
+<style>
+:root{color-scheme:dark;--bg:#101114;--panel:#1b1d22;--ink:#e5e7ec;--muted:#9096a3;--line:#2d3038;--accent:#b8ed80;font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg)}*{box-sizing:border-box}body{margin:0;min-height:100svh;overflow:hidden}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:6px}.stage{height:100svh;min-height:440px;position:relative;display:grid;place-items:center;isolation:isolate;background:radial-gradient(ellipse at 50% 39%,#b8ed8006,transparent 51%),var(--bg)}.stage:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.16;background-image:linear-gradient(#9096a325 1px,transparent 1px),linear-gradient(90deg,#9096a325 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at center,#000,transparent 68%)}.top{position:absolute;top:32px;left:40px;right:40px;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:2px;color:var(--muted)}.top .tag{border:1px solid var(--line);border-radius:20px;padding:7px 11px;letter-spacing:1px;color:var(--muted)}.center{text-align:center;transform:translateY(-28px);width:100%;position:relative}.emblem{width:220px;height:200px;margin:0 auto 22px;position:relative;display:grid;place-items:center}.halo{position:absolute;width:140px;height:140px;border-radius:50%;background:var(--accent);filter:blur(58px);opacity:0}.running .halo{animation:halo 3.2s ease-out forwards}canvas{width:220px;height:200px;position:relative}.brand{margin:0;font-size:46px;line-height:1.3;font-weight:500;letter-spacing:15px;padding-left:15px;opacity:0;transform:translateY(12px);filter:blur(5px)}.english{margin:12px 0 0;font-size:10px;letter-spacing:6px;padding-left:6px;color:var(--muted);opacity:0}.tagline{font-size:13px;letter-spacing:4px;padding-left:4px;margin:29px 0 0;color:#b5bac5;opacity:0}.running .brand{animation:reveal .8s 1.05s cubic-bezier(.2,.8,.2,1) forwards}.running .english{animation:reveal .8s 1.25s ease forwards}.running .tagline{animation:reveal .9s 1.65s ease forwards}.status{position:absolute;bottom:115px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:9px;font-size:11px;letter-spacing:1px;color:var(--muted);opacity:0}.running .status{animation:reveal .6s .35s ease forwards}.dot{width:4px;height:4px;background:var(--accent);border-radius:50%;box-shadow:0 0 10px #b8ed8030}.running .dot{animation:pulse 1s 3}.controls{position:absolute;bottom:34px;left:40px;right:40px;display:flex;align-items:center;justify-content:space-between;gap:18px}.caption{color:var(--muted);font-size:11px;line-height:1.9;letter-spacing:1px}.actions{display:flex;gap:10px;align-items:center}.actions button,.actions a{font:inherit;font-size:12px;letter-spacing:.6px;border:1px solid #424651;color:var(--ink);border-radius:5px;background:#292c34;text-decoration:none;padding:11px 16px;cursor:pointer;transition:background .2s,border-color .2s}.actions button:hover,.actions a:hover{background:#343843;border-color:#596170}.actions .primary{background:var(--accent);color:#172212;border-color:var(--accent)}.actions .primary:hover{background:#c7f39a}.replay-icon{display:inline-block;margin-right:7px;font-size:16px;vertical-align:-1px}@keyframes reveal{to{opacity:1;transform:translateY(0);filter:blur(0)}}@keyframes halo{0%{opacity:0;transform:scale(.4)}60%{opacity:.24}100%{opacity:.13;transform:scale(1)}}@keyframes pulse{50%{opacity:.25}}@media(max-width:600px){.top{top:24px;left:22px;right:22px}.top>span:first-child{font-size:9px;letter-spacing:1px}.controls{left:22px;right:22px;bottom:24px;flex-direction:column;gap:16px}.caption{text-align:center}.status{bottom:152px}.center{transform:translateY(-38px)}.emblem{margin-bottom:12px}.brand{font-size:38px}.tagline{font-size:12px}.top .tag{font-size:10px}}@media(prefers-reduced-motion:reduce){.running .brand,.running .english,.running .tagline,.running .status{animation-delay:0s;animation-duration:.01s}.running .halo{animation-duration:.01s}.running .dot{animation:none}}
+.stage{position:fixed;inset:0;z-index:2;transition:opacity .7s ease,transform .9s cubic-bezier(.2,.7,.2,1);transform-origin:50% 44%}.stage.leaving{opacity:0;transform:scale(1.025);pointer-events:none}.workspace{position:fixed;inset:0;width:100%;height:100%;border:0;background:var(--bg);opacity:0;transform:translateY(10px) scale(.995);transition:opacity .85s ease,transform 1s cubic-bezier(.2,.7,.2,1);pointer-events:none}.workspace.visible{opacity:1;transform:none;pointer-events:auto}.actions a[aria-disabled=true]{opacity:.65;pointer-events:none}@media(prefers-reduced-motion:reduce){.stage,.workspace{transition-duration:.01s;transform:none}}
+</style>
+</head>
+<body>
+<main class="stage" id="stage">
+ <div class="top"><span>INKSHIELD / 隐映</span><span class="tag">启动动画 · 网页预览</span></div>
+ <div class="center"><div class="emblem"><div class="halo"></div><canvas id="mark" aria-label="像素聚合成隐映的眼形标志" role="img"></canvas></div><h1 class="brand">隐映</h1><p class="english">INKSHIELD</p><p class="tagline">让创作自由，让隐私隐形</p></div>
+ <div class="status" role="status"><span class="dot"></span><span id="status">像素聚合中</span></div>
+ <footer class="controls"><div class="caption">像素聚合 · 轻盈显现<br>3.2 秒 / 启动动效概念预览</div><div class="actions"><button id="replay" type="button"><span class="replay-icon" aria-hidden="true">↻</span>重播动画</button><a class="primary" href="/" id="enter">进入工作台 →</a></div></footer>
+</main>
+<script>
+(()=>{
+ const stage=document.getElementById('stage'),canvas=document.getElementById('mark'),ctx=canvas.getContext('2d'),status=document.getElementById('status');
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');let raf=0,start=0,particles=[];
+ // A pixel-built eye: open outer silhouette, central aperture, escaping top-right pixels.
+ const grid=['0000000000000','0000000000110','0000000001001','0000111100000','0011111111000','0111000011100','1110011001110','0110011001100','0011000011000','0001111110000','0000011000000'];
+ for(let y=0;y<grid.length;y++)for(let x=0;x<grid[y].length;x++)if(grid[y][x]==='1'){
+  const i=particles.length,seed=Math.sin((i+1)*91.723)*43758.5453,r=seed-Math.floor(seed),a=i*2.39996;
+  particles.push({x:34+x*12,y:35+y*12,sx:110+Math.cos(a)*(85+r*45),sy:100+Math.sin(a)*(70+r*45),delay:r*.48,rotation:(r-.5)*1.8,light:68+r*5});
+ }
+ function resize(){const d=Math.min(devicePixelRatio||1,2);canvas.width=220*d;canvas.height=200*d;ctx.setTransform(d,0,0,d,0,0)}
+ function roundRect(x,y,w,r){ctx.beginPath();ctx.roundRect(x,y,w,w,r);ctx.fill()}
+ function draw(seconds){ctx.clearRect(0,0,220,200);for(const p of particles){const t=Math.max(0,Math.min(1,(seconds-p.delay)/1.3)),e=1-Math.pow(1-t,4),x=p.sx+(p.x-p.sx)*e,y=p.sy+(p.y-p.sy)*e;ctx.save();ctx.translate(x,y);ctx.rotate(p.rotation*(1-e));ctx.globalAlpha=Math.min(1,t*3);ctx.fillStyle=`hsl(90 75% ${p.light}%)`;roundRect(-4.5,-4.5,9,1.8);ctx.restore()}}
+ function frame(now){const s=(now-start)/1000;draw(s);status.textContent=s<1.5?'像素聚合中':s<3.2?'让每一帧，保留恰好的边界':'隐映 · 为创作留白';if(s<3.2)raf=requestAnimationFrame(frame)}
+ function play(){cancelAnimationFrame(raf);stage.classList.remove('running');void stage.offsetWidth;stage.classList.add('running');start=performance.now();if(reduced.matches){draw(4);status.textContent='隐映 · 为创作留白'}else raf=requestAnimationFrame(frame)}
+ document.getElementById('replay').addEventListener('click',play);resize();play();window.addEventListener('resize',()=>{resize();draw(Math.max(0,(performance.now()-start)/1000))});
+ const desktop=location.pathname==='/startup';
+ const enter=document.getElementById('enter');enter.href=desktop?'/':'http://127.0.0.1:8001/';let entering=false;
+ if(desktop){document.title='隐映 · 正在启动';document.querySelector('.top .tag').textContent='本地视频隐私工作台';document.querySelector('.caption').textContent='让创作自由，让隐私隐形';document.getElementById('replay').hidden=true;enter.textContent='跳过动画 →';setTimeout(()=>enter.click(),reduced.matches?100:3200)}
+ enter.addEventListener('click',async event=>{
+  if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+  event.preventDefault();if(entering)return;entering=true;cancelAnimationFrame(raf);enter.setAttribute('aria-disabled','true');enter.textContent='正在打开工作台…';status.textContent='正在准备工作台';
+  const workspace=document.createElement('iframe');workspace.className='workspace';workspace.title='隐映视频工作台';workspace.setAttribute('aria-hidden','true');workspace.inert=true;let timer;
+  try{
+   if(location.protocol!=='file:'){const response=await fetch(desktop?'/':'/workspace-ready',{signal:AbortSignal.timeout(8000),cache:'no-store'});if(!response.ok)throw Error('服务未就绪')}
+   await new Promise((resolve,reject)=>{timer=setTimeout(()=>reject(Error('加载超时')),15000);workspace.onload=()=>{clearTimeout(timer);if(desktop&&!workspace.contentDocument?.getElementById('editorWorkspace')){reject(Error('工作台未能加载'));return}resolve()};workspace.onerror=()=>reject(Error('加载失败'));workspace.src=enter.href;document.body.prepend(workspace)});
+   status.textContent='工作台已就绪';
+   requestAnimationFrame(()=>requestAnimationFrame(()=>{workspace.classList.add('visible');stage.classList.add('leaving');stage.inert=true}));
+   setTimeout(()=>{stage.hidden=true;workspace.inert=false;workspace.removeAttribute('aria-hidden');workspace.focus();document.title='隐映 · 视频工作台'},reduced.matches?50:1000);
+  }catch(error){clearTimeout(timer);workspace.remove();entering=false;enter.removeAttribute('aria-disabled');enter.textContent='重新进入工作台 →';status.textContent='工作台暂未就绪，请稍后重试'}
+ });
+})();
+</script>
+</body>
+</html>

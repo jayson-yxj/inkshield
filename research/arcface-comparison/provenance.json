@@ -1,0 +1,7 @@
+{
+  "source": "https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip",
+  "api_asset": "https://api.github.com/repos/deepinsight/insightface/releases/assets/101975360",
+  "model": "w600k_r50.onnx",
+  "bytes": 174383860,
+  "sha256": "4c06341c33c2ca1f86781dab0e829f88ad5b64be9fba56e56bc9ebdefc619e43"
+}

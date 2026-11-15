@@ -1,0 +1,92 @@
+{
+  "hashes": {
+    "mask_timeline.py": "1b04663002ee3703a1e5f3f8b2c2e9332e8678aedcac828cb8598d82adeabd38",
+    "index.html": "32cd82414507f7849031799e67fa06bc494930403d727c089f9a0a04d2ee8290",
+    "mask_layers.py": "6b4b41c56637430b47c9a20f27fea4fd401e146be8643ae038f78bb42f3d3476",
+    "sam_service.py": "2dc72accc22f537c23cc04f7334b65814f5a091569919cdd1cdbce89c5588465",
+    "layers_ui.js": "2c892051aa0cae2e55326cddd6c0e600961bc6f30ac175297f1eb4de106cf45b",
+    "workspace_ui.css": "bdcdd2f94b943347bac4186dcd2510e8f0fd44bd920ad4bb563e9b07faf6085a",
+    "preview_video.py": "f6f1a958e0a4372b9551ced8fc2e011990ab32e5eab92ea978d4db6082a4d5ad",
+    "server.py": "53fc8ebb1f925137ab8f75c9652e3802ef8e8ec1689c2edf4926e2486e3e33c0",
+    "sam_engine.py": "7bfdc34a141d0e9df889e089717f1768966ef555d162e5e3796a86e4833e00f9",
+    "workspace_ui.js": "02a54392cdc2bd14e5943fefc0748af13e8a6f356a32ecc48eabbd9bc04efdc2"
+  },
+  "suite_sha256": "2b495657fb48423f8c1d5b4a2a03bd591735109d94fe66093cd57f17916dac0d",
+  "harness_sha256": "d2ff9e25765f1a1b06195dc7087926a56a511d7634978c981f537e9df9b332ae",
+  "input_method": "Real WebView2 with synthetic DOM click/input events; immutable controlled analysis fixtures; no inference",
+  "passed": true,
+  "service": {
+    "pid": 10392,
+    "url": "http://127.0.0.1:61655/"
+  },
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+  "dom": {
+    "state": "done",
+    "checks": [],
+    "observations": [
+      {
+        "phase": "before",
+        "globalFrame": 149,
+        "slider": 149,
+        "sourceTime": 5.96,
+        "sourceHidden": false,
+        "canvasHidden": true,
+        "clipSelected": true,
+        "playing": false,
+        "label": "—"
+      },
+      {
+        "phase": "after slider 25",
+        "globalFrame": 149,
+        "slider": 25,
+        "sourceTime": 1,
+        "sourceHidden": false,
+        "canvasHidden": true,
+        "clipSelected": true,
+        "playing": false,
+        "label": "—"
+      },
+      {
+        "phase": "deselect",
+        "globalFrame": 149,
+        "slider": 25,
+        "sourceTime": 1,
+        "sourceHidden": false,
+        "canvasHidden": true,
+        "clipSelected": false,
+        "playing": false,
+        "label": "—"
+      },
+      {
+        "phase": "continuous start",
+        "globalFrame": 10,
+        "slider": 25,
+        "sourceTime": 0.450417,
+        "sourceHidden": true,
+        "canvasHidden": false,
+        "clipSelected": false,
+        "playing": true,
+        "label": "全素材 0:00.40 / 0:06.00 · 片段 1 · 帧 11/150"
+      }
+    ]
+  },
+  "browser_errors": [],
+  "reduced_motion": {
+    "matches": true,
+    "icon": "0s",
+    "viewer": "0s",
+    "ring": "0s"
+  },
+  "source_hashes_after": {
+    "mask_timeline.py": "1b04663002ee3703a1e5f3f8b2c2e9332e8678aedcac828cb8598d82adeabd38",
+    "index.html": "32cd82414507f7849031799e67fa06bc494930403d727c089f9a0a04d2ee8290",
+    "mask_layers.py": "6b4b41c56637430b47c9a20f27fea4fd401e146be8643ae038f78bb42f3d3476",
+    "sam_service.py": "2dc72accc22f537c23cc04f7334b65814f5a091569919cdd1cdbce89c5588465",
+    "layers_ui.js": "2c892051aa0cae2e55326cddd6c0e600961bc6f30ac175297f1eb4de106cf45b",
+    "workspace_ui.css": "bdcdd2f94b943347bac4186dcd2510e8f0fd44bd920ad4bb563e9b07faf6085a",
+    "preview_video.py": "f6f1a958e0a4372b9551ced8fc2e011990ab32e5eab92ea978d4db6082a4d5ad",
+    "server.py": "53fc8ebb1f925137ab8f75c9652e3802ef8e8ec1689c2edf4926e2486e3e33c0",
+    "sam_engine.py": "7bfdc34a141d0e9df889e089717f1768966ef555d162e5e3796a86e4833e00f9",
+    "workspace_ui.js": "02a54392cdc2bd14e5943fefc0748af13e8a6f356a32ecc48eabbd9bc04efdc2"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "source": "C:\\Users\\36301\\Desktop\\5.mp4",
+  "input_dimensions": [
+    640,
+    360
+  ],
+  "frames": 5,
+  "initial": {
+    "model_load_seconds": 5.3508432999951765,
+    "frame_loading_seconds": 3.3708010999980615,
+    "prompt_seconds": 3.2514053999911994,
+    "forward_seconds": 10.000236699997913,
+    "reverse_seconds": 11.422343099999125,
+    "total_seconds": 28.044903000001796,
+    "seconds_per_frame": 5.6089806000003595,
+    "frame_count": 5,
+    "anchor_frame": 2,
+    "prompt_frame_count": 1,
+    "threads": 4,
+    "device": "cpu",
+    "model": "sam2.1_hiera_tiny",
+    "mask_values": "0/1"
+  },
+  "correction": {
+    "model_load_seconds": 0.0,
+    "frame_loading_seconds": 3.4525380000122823,
+    "prompt_seconds": 6.839448299986543,
+    "forward_seconds": 12.007530999995652,
+    "reverse_seconds": 11.557548500000848,
+    "total_seconds": 33.85715860000346,
+    "seconds_per_frame": 6.771431720000692,
+    "frame_count": 5,
+    "anchor_frame": 2,
+    "prompt_frame_count": 2,
+    "threads": 4,
+    "device": "cpu",
+    "model": "sam2.1_hiera_tiny",
+    "mask_values": "0/1"
+  },
+  "initial_areas": {
+    "2": 26433,
+    "3": 26479,
+    "4": 26457,
+    "1": 26447,
+    "0": 26464
+  },
+  "corrected_areas": {
+    "2": 26433,
+    "3": 25809,
+    "4": 2519,
+    "1": 25841,
+    "0": 25780
+  },
+  "full_bidirectional_coverage": true,
+  "cancellation_checked": true,
+  "positive_and_negative_correction_checked": true,
+  "accuracy": "Smoke only; no ground truth or quality ranking."
+}

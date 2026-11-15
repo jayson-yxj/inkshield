@@ -1,0 +1,88 @@
+[
+  {
+    "name": ".gitattributes",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/.gitattributes",
+    "error": "ReadTimeout('The read operation timed out')"
+  },
+  {
+    "name": "README.md",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/README.md",
+    "error": "ReadTimeout('The read operation timed out')"
+  },
+  {
+    "name": "config.json",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/config.json",
+    "error": "ReadTimeout('The read operation timed out')"
+  },
+  {
+    "name": "files.txt",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/files.txt",
+    "error": "ReadTimeout('The read operation timed out')"
+  },
+  {
+    "name": "models/__init__.py",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/models/__init__.py",
+    "error": "ReadTimeout('The read operation timed out')"
+  },
+  {
+    "name": "models/base/__init__.py",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/models/base/__init__.py",
+    "error": "ReadTimeout('The read operation timed out')"
+  },
+  {
+    "name": "models/base/configs/example.yaml",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/models/base/configs/example.yaml",
+    "error": "ReadTimeout('The read operation timed out')"
+  },
+  {
+    "name": "models/base/utils.py",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/models/base/utils.py",
+    "error": "ReadTimeout('The read operation timed out')"
+  },
+  {
+    "name": "models/iresnet/__init__.py",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/models/iresnet/__init__.py",
+    "error": "HTTPStatusError(\"Server error '521 status code 521' for url 'https://hf-mirror.com/api/resolve-cache/models/minchul/cvlface_adaface_ir50_ms1mv2/aa35c74e86afb7482cb7859af4c14eab83a8728d/models%2Firesnet%2F__init__.py?%2Fminchul%2Fcvlface_adaface_ir50_ms1mv2%2Fresolve%2Fmain%2Fmodels%2Firesnet%2F__init__.py=&etag=%22fb5c6b5b48fb6ef4b1726f37901d9751c8adca45%22'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/521\")"
+  },
+  {
+    "name": "models/iresnet/configs/v1_ir101.yaml",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/models/iresnet/configs/v1_ir101.yaml",
+    "error": "HTTPStatusError(\"Server error '525 status code 525' for url 'https://hf-mirror.com/api/resolve-cache/models/minchul/cvlface_adaface_ir50_ms1mv2/aa35c74e86afb7482cb7859af4c14eab83a8728d/models%2Firesnet%2Fconfigs%2Fv1_ir101.yaml?%2Fminchul%2Fcvlface_adaface_ir50_ms1mv2%2Fresolve%2Fmain%2Fmodels%2Firesnet%2Fconfigs%2Fv1_ir101.yaml=&etag=%223a9a0bac53502c9838b746e90bf88977162953e2%22'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/525\")"
+  },
+  {
+    "name": "models/iresnet/configs/v1_ir18.yaml",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/models/iresnet/configs/v1_ir18.yaml",
+    "error": "HTTPStatusError(\"Server error '521 status code 521' for url 'https://hf-mirror.com/api/resolve-cache/models/minchul/cvlface_adaface_ir50_ms1mv2/aa35c74e86afb7482cb7859af4c14eab83a8728d/models%2Firesnet%2Fconfigs%2Fv1_ir18.yaml?%2Fminchul%2Fcvlface_adaface_ir50_ms1mv2%2Fresolve%2Fmain%2Fmodels%2Firesnet%2Fconfigs%2Fv1_ir18.yaml=&etag=%2228a772a344f7837c9dfc0519756c5440137ac6dc%22'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/521\")"
+  },
+  {
+    "name": "models/iresnet/configs/v1_ir50.yaml",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/models/iresnet/configs/v1_ir50.yaml",
+    "error": "HTTPStatusError(\"Server error '525 status code 525' for url 'https://hf-mirror.com/api/resolve-cache/models/minchul/cvlface_adaface_ir50_ms1mv2/aa35c74e86afb7482cb7859af4c14eab83a8728d/models%2Firesnet%2Fconfigs%2Fv1_ir50.yaml?%2Fminchul%2Fcvlface_adaface_ir50_ms1mv2%2Fresolve%2Fmain%2Fmodels%2Firesnet%2Fconfigs%2Fv1_ir50.yaml=&etag=%2267399c1a6f9173a160451c812a38878807b35fe2%22'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/525\")"
+  },
+  {
+    "name": "models/iresnet/model.py",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/models/iresnet/model.py",
+    "error": "HTTPStatusError(\"Server error '521 status code 521' for url 'https://hf-mirror.com/api/resolve-cache/models/minchul/cvlface_adaface_ir50_ms1mv2/aa35c74e86afb7482cb7859af4c14eab83a8728d/models%2Firesnet%2Fmodel.py?%2Fminchul%2Fcvlface_adaface_ir50_ms1mv2%2Fresolve%2Fmain%2Fmodels%2Firesnet%2Fmodel.py=&etag=%2262d65d1076d794abba5259735b651ef067efd17d%22'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/521\")"
+  },
+  {
+    "name": "pretrained_model/config.yaml",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/pretrained_model/config.yaml",
+    "error": "HTTPStatusError(\"Server error '525 status code 525' for url 'https://hf-mirror.com/api/resolve-cache/models/minchul/cvlface_adaface_ir50_ms1mv2/aa35c74e86afb7482cb7859af4c14eab83a8728d/pretrained_model%2Fconfig.yaml?%2Fminchul%2Fcvlface_adaface_ir50_ms1mv2%2Fresolve%2Fmain%2Fpretrained_model%2Fconfig.yaml=&etag=%2297cbd8f0ede9fc32df2f08a8291045dce81b7cd4%22'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/525\")"
+  },
+  {
+    "name": "pretrained_model/model.pt",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/pretrained_model/model.pt",
+    "bytes": 174611121,
+    "sha256": "b9401a04c1f3e782ac4faa36a255619ef25cf2474321d395412b27a67b47cf7d"
+  },
+  {
+    "name": "pretrained_model/model.yaml",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/pretrained_model/model.yaml",
+    "error": "HTTPStatusError(\"Server error '521 status code 521' for url 'https://hf-mirror.com/api/resolve-cache/models/minchul/cvlface_adaface_ir50_ms1mv2/aa35c74e86afb7482cb7859af4c14eab83a8728d/pretrained_model%2Fmodel.yaml?%2Fminchul%2Fcvlface_adaface_ir50_ms1mv2%2Fresolve%2Fmain%2Fpretrained_model%2Fmodel.yaml=&etag=%22b2735f375ef333bd30e612a084a1b7e4fad84b15%22'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/521\")"
+  },
+  {
+    "name": "wrapper.py",
+    "url": "https://hf-mirror.com/minchul/cvlface_adaface_ir50_ms1mv2/resolve/main/wrapper.py",
+    "error": "HTTPStatusError(\"Server error '521 status code 521' for url 'https://hf-mirror.com/api/resolve-cache/models/minchul/cvlface_adaface_ir50_ms1mv2/aa35c74e86afb7482cb7859af4c14eab83a8728d/wrapper.py?%2Fminchul%2Fcvlface_adaface_ir50_ms1mv2%2Fresolve%2Fmain%2Fwrapper.py=&etag=%227c7e8a49c84f8c1e3c770a77d13f2af95785447d%22'\\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/521\")"
+  }
+]
