@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inkshield"
+version = "0.11.0"
+description = "Local video privacy editor"
+requires-python = ">=3.10"
+dependencies = [
+    "onnxruntime==1.23.2",
+    "protobuf>=4.25.8,<5",
+    "numpy>=2,<3",
+    "opencv-python-headless>=4.10",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "python-multipart>=0.0.18",
+    "av>=14",
+    "imageio-ffmpeg>=0.6",
+]
+
+[project.optional-dependencies]
+desktop = ["pywebview>=5"]
+
+[project.scripts]
+inkshield = "inkshield.desktop:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+inkshield = ["web/*.html", "web/*.js", "web/*.css"]

@@ -1,0 +1,10 @@
+# Use isolated CPython .venv; the host Anaconda fails to load native ORT DLLs.
+onnxruntime==1.23.2
+protobuf>=4.25.8,<5
+numpy>=2,<3
+opencv-python-headless>=4.10
+fastapi>=0.115
+uvicorn>=0.30
+python-multipart>=0.0.18
+av>=14
+imageio-ffmpeg>=0.6

@@ -1,14 +1,12 @@
 # 文档导航
 
-- [Windows 使用说明](../WINDOWS使用说明.txt)：当前便携版运行、编辑、限制与退出说明。
-- [SAM 构建说明](../SAM_PACKAGING.md)、[基础构建报告](../PACKAGING_REPORT.md)、[音轨依赖](../AUDIO_DEPENDENCIES.md)：构建脚本和 PyInstaller 清单引用的文件暂保留原根路径。
-- [修订2发布记录](reviews/SAM_RELEASE_20261110.md)、[教程与发布验证汇总](reviews/RELEASE_20261110_REVIEW.md)：历史冻结产物验收范围。
-- [reviews/](reviews/)：各阶段评审与集成说明，不代表所有历史结论均适用于后续版本。
+- [开发架构与贡献路线](development/architecture.md)：模块职责、数据流和修改入口。
+- [测试入口](../tests/README.md)：常规回归、原生界面验收与本地历史探针的区别。
+- [Windows 使用说明](user/WINDOWS使用说明.txt)：便携版启动、工作区、数据目录与限制。
+- [SAM 构建说明](distribution/SAM_PACKAGING.md)、[基础构建报告](distribution/PACKAGING_REPORT.md)、[音轨依赖](distribution/AUDIO_DEPENDENCIES.md)：构建环境与分发依赖记录。
+- [依赖清单](../packaging/PACKAGING_DEPENDENCIES.json)：历史构建环境的完整元数据与许可文件清单。
+- [修订2发布记录](reviews/SAM_RELEASE_20261110.md)、[教程与发布验证汇总](reviews/RELEASE_20261110_REVIEW.md)：历史冻结产物的验收范围。
 
-## 目录整理原则
+文档按 development（开发）、distribution（构建与分发）、user（使用）、reviews（阶段评审）分类。生产代码位于 `src/inkshield`，前端位于其 `web` 子目录；工具按职责放在 `tools`，PyInstaller spec 位于 `packaging/pyinstaller`。
 
-生产 Python 模块、前端资源及构建入口保留根路径。许多独立验收脚本基于 `Path(__file__).resolve().parent` 寻找生产资源、导入相邻模块或定位本地 `runtime/`；直接移动会改变其工作目录契约，因此本次保留这些入口。新增通用测试优先放 `tests/`，避免继续增加临时根目录脚本。
-
-历史研究 `research/` 和录制/夹具 `evidence/` 从 Git 索引移除但保留本地文件；`runtime/`、模型权重、虚拟环境、视频与打包结果也不纳入版本控制。Git ignore 不会清理过去的提交历史，本次不改写历史。
-
-历史报告内的路径、时间和哈希按当时记录保留；报告迁移到本目录后，其中未调整的相对路径仍以原项目根为背景，不应直接当作可运行命令。部分报告引用的本地证据不随仓库发布。公开克隆可使用源码和保留的单元测试，不能声称已重现这些历史桌面、推理或视觉验收。
+reviews 中的历史路径、时间和哈希保留当时记录，不直接当作当前运行命令。research、evidence、runtime、模型权重、视频、虚拟环境与打包结果不随 Git 克隆发布；历史冻结结论不能替代当前版本重新验证。当前命令均从仓库根执行。
