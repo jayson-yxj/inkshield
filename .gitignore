@@ -41,6 +41,14 @@ runtime/
 /evidence/**/*.png
 /evidence/**/*.webp
 
+# Local research and historical acceptance recordings (never publish)
+/research/
+/evidence/
+*.zip.*
+*.7z.*
+*.part
+*.tmp
+
 # Downloaded third-party source trees
 /research/hyperlpr3/
 /research/hyperlpr3-source/

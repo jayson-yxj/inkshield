@@ -1,1 +1,0 @@
-{"available":true,"devices":[{"id":"cpu","label":"CPU","available":true},{"id":"cuda","label":"NVIDIA CUDA","available":true,"reason":null}],"default_device":"cpu","max_frames":150,"max_width":1280,"max_height":720,"reason":null}
